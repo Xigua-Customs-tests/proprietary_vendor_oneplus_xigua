@@ -1,5 +1,5 @@
 {
-"file_version" : 13.004,
+"file_version" : 13.002,
 "file_data" : [
 
 {
@@ -616,7 +616,7 @@
   "VendorTag": "com.oplus.tele.high.picture.size.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {

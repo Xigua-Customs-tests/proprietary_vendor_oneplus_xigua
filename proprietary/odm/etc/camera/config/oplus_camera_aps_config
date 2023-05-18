@@ -1,5 +1,5 @@
 {
-"file_version" : 13.010, // Andorid + version, 13.001 means Android 13 & version 001
+"file_version" : 13.015, // Andorid + version, 13.001 means Android 13 & version 001
 "file_data" : [
 
 {
@@ -123,7 +123,7 @@
   "VendorTag": "com.oplus.aps.bokeh.set.extra.effects",
   "Type": "Int32",
   "Count": "3",
-  "Value": "1,1,1",
+  "Value": "1,1,0",
   "Comment": "Bokeh effect support: Bigface; Pet; Multisemseg"
 },
 
@@ -1704,9 +1704,11 @@
 {
   "VendorTag": "com.oplus.aps.daytime.tripod.enable",
   "Type": "Int32",
-  "Count": "1",
-  "Value": "0",
-  "Comment": "camera_state ARC_TURBO_RAW_CAMERA_STATE_TRIPOD support"
+  "Count": "33",
+  "Value": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+  "Comment": "enable or disable daytime tripod camera_state of each capMode.
+              capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
+              STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO    /* 17-32 */"
 },
 
 {
@@ -1715,6 +1717,23 @@
   "Count": "1",
   "Value": "1",
   "Comment": "front sensor 90°/80° support"
+},
+
+
+{
+  "VendorTag": "com.oplus.aps.facerectify.perflevel",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2",
+  "Comment": "facerectify perf level"
+},
+
+{
+  "VendorTag": "com.oplus.aps.faceDetect.resizevalue",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "960",
+  "Comment": "facerectify faceDetect resize value"
 },
 
 {
@@ -1757,22 +1776,6 @@
 
 {
   "VendorTag": "com.oplus.aps.ux.preview_lsd",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "4",
-  "Comment": "version3.0 set 1;version4.0:(light scene:1;heavy scene:2;draw scene:4;list pick:8;default 1)"
-},
-
-{
-  "VendorTag": "com.oplus.aps.ux.preview_pf",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "4",
-  "Comment": "version3.0 set 1;version4.0:(light scene:1;heavy scene:2;draw scene:4;list pick:8;default 1)"
-},
-
-{
-  "VendorTag": "com.oplus.aps.ux.preview_default",
   "Type": "Int32",
   "Count": "1",
   "Value": "4",
@@ -1869,6 +1872,13 @@
   "Comment": "support manualISO and sensitivity compair"
 },
 {
+   "VendorTag": "com.oplus.aps.zslexif.enable",
+   "Type": "Int32",
+   "Count": "1",
+   "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.aps.memmgr.support.gralloc",
   "Type": "Byte",
   "Count": "1",
@@ -1919,6 +1929,14 @@
   "Count": "1",
   "Value": "1",
   "Comment": "use physicalMeta to B2Y only on rear portrait mode, default:1"
+},
+
+{
+  "VendorTag": "com.oplus.scene.AIscenemode",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "fireworks,can add more scene mode in value"
 },
 
 {
