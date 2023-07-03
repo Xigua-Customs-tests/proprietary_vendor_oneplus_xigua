@@ -143,8 +143,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/lux_aod.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lux_aod.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/salami_qrd_ois_system.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/salami_qrd_ois_system.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
-    vendor/oneplus/salami/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
-    vendor/oneplus/salami/proprietary/odm/etc/wifi/bdwlang.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlang.elf \
-    vendor/oneplus/salami/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
-    vendor/oneplus/salami/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
-    vendor/oneplus/salami/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini
+    vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/bdwlan.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0a \
+    vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/bdwlan.b0e:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0e \
+    vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/bdwlan.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0i \
+    vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.elf \
+    vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/regdb.bin \
+    vendor/oneplus/salami/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt
