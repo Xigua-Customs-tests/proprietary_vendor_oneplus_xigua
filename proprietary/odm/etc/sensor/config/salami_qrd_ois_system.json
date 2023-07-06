@@ -57,6 +57,9 @@
       },
       "gyro_name":{ "type": "str", "ver": "0",
         "data": "bmi260"
+      },
+      "ois_name":{ "type": "str", "ver": "0",
+        "data": "akm7322c"
       }
     }
   }

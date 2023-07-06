@@ -1,5 +1,5 @@
 {
-"file_version" : 13.013, // Andorid + version, 13.001 means Android 13 & version 001
+"file_version" : 13.014, // Andorid + version, 13.001 means Android 13 & version 001
 "file_data" : [
 
 {
@@ -229,21 +229,6 @@
 },
 
 {
-  "Key": "COUPLEHDR_TRIGGER_REGION",
-  "Type": "Int32",
-  "Count": "9",
-  "Value": "35 /*hdr scope thd*/,
-            100 /*drc*100 thd*/,
-            -36 /*evminus thd*/,
-            240 /*indoor lux index*/,
-            25 /*indoor hdr scope thd*/,
-            100 /*indoor drc*100 thd*/,
-            -36 /*indoor evminus thd*/,
-            10 /*hdr scope thd face*/,
-            10 /*hdr scope thd face indoor*/"
-},
-
-{
   "Key": "NORMAL_SCENE_NIGHT_TRIGGER_REGION",
   "Type": "Int32",
   "Count": "2",
@@ -304,11 +289,6 @@
   "Key": "IS_TURBORAW_MOTION_LOW_EXP_EV_THRESH_ENABLE",
   "Type": "Float",
   "Count": "1",
-  "Value": "1"
-},
-
-{
-  "Key": "COUPLEHDR_ENABLE",
   "Value": "1"
 },
 
@@ -2915,20 +2895,6 @@
   "Key": "TURBOERAW_SUPPORT_MOTION_SCENE",
   "Value": "0",
   "Comment": "1:support, 0:not support"
-},
-
-{
-  "Key": "MERGE_HDR_VERSION_SUPPORT",
-  "Type": "Int32",
-  "Count": "2",
-  "Value": "7       /* hdrVersion */,
-            4       /* cHdrVersion */",
-  "Comment": "hdrVersion; cHdrVersion"
-},
-
-{
-  "Key": "MERGE_HDR_SUPPORT",
-  "Value": "1"
 },
 
 {

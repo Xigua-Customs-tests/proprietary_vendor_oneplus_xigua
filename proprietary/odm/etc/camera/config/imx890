@@ -1,5 +1,5 @@
 {
-"file_version" : 13.009, // Andorid + version, 13.001 means Android 13 & version 001
+"file_version" : 13.011, // Andorid + version, 13.001 means Android 13 & version 001
 "file_data" : [
 
 {
@@ -227,21 +227,6 @@
 },
 
 {
-  "Key": "COUPLEHDR_TRIGGER_REGION",
-  "Type": "Int32",
-  "Count": "9",
-  "Value": "35 /*hdr scope thd*/,
-            100 /*drc*100 thd*/,
-            -36 /*evminus thd*/,
-            240 /*indoor lux index*/,
-            25 /*indoor hdr scope thd*/,
-            100 /*indoor drc*100 thd*/,
-            -36 /*indoor evminus thd*/,
-            10 /*hdr scope thd face*/,
-            10 /*hdr scope thd face indoor*/"
-},
-
-{
   "Key": "NORMAL_SCENE_NIGHT_TRIGGER_REGION",
   "Type": "Int32",
   "Count": "2",
@@ -324,11 +309,6 @@
             4       /* hdr frame number */,
             6       /* blurless+hdr frame number */",
   "Comment": "blurless+hdr support; blurless+hdr iso trigger; hdr frame number; blurless+hdr frame number"
-},
-
-{
-  "Key": "COUPLEHDR_ENABLE",
-  "Value": "1"
 },
 
 {
@@ -2825,15 +2805,6 @@
             face width,
             object distance,
             blur intensity"
-},
-
-{
-  "Key": "MERGE_HDR_VERSION_SUPPORT",
-  "Type": "Int32",
-  "Count": "2",
-  "Value": "0       /* hdrVersion */,
-            4       /* cHdrVersion */",
-  "Comment": "hdrVersion; cHdrVersion"
 },
 
 {

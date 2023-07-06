@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/s5k3p9:$(TARGET_COPY_OUT_ODM)/etc/camera/config/s5k3p9 \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/s5kjn1sq03:$(TARGET_COPY_OUT_ODM)/etc/camera/config/s5kjn1sq03 \
+    vendor/oneplus/salami/proprietary/odm/etc/camera/config/sr_params.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/config/sr_params.xml \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/video_beauty_default_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/video_beauty_default_config \
     vendor/oneplus/salami/proprietary/odm/etc/camera/settings_fdc.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc.txt \
     vendor/oneplus/salami/proprietary/odm/etc/camera/settings_fdc_lite.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc_lite.txt \

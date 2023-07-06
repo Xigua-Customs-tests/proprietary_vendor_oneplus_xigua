@@ -1,5 +1,5 @@
 {
-  "camera_id_list":["0", "1", "2", "3", "4"],
+  "camera_id_list":["0", "1", "2", "3", "4", "5"],
   "main_info":{
     "version_code":"1.0.2",
     "version_date":"20200831200000"
@@ -237,6 +237,7 @@
     "com.oplus.front.common.high.mfnr.picturesize":"2304x1728x1728x1728x2304x1040x2304x1296",
     "com.oplus.flash.wide.tel.support":"1",
     "com.oplus.sat.need.set.zoomratio":"1",
+    "com.oplus.feature.breeno.scan":"0",
     "com.oplus.xpan.main.picturesize":"8192x3724",
     "com.oplus.rear.portrait.sat.fullbodysize": "4096x3072x2832x2124",
     "com.oplus.rear.portrait.sat.halfbodysize": "3136x2352x1600x1200",

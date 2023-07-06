@@ -1,5 +1,5 @@
 {
-"file_version" : 13.015, // Andorid + version, 13.001 means Android 13 & version 001
+"file_version" : 13.011, // Andorid + version, 13.001 means Android 13 & version 001
 "file_data" : [
 
 {
@@ -7,6 +7,13 @@
   "Type": "Float",
   "Count": "4",
   "Value": "1.5,1.9,1.9,20.1"
+},
+
+{
+  "VendorTag": "com.oplus.yuvsr.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
 },
 
 {
@@ -162,7 +169,7 @@
   "VendorTag": "com.oplus.aps.params.rectify",
   "Type": "Int32",
   "Count": "8",
-  "Value": "  6,           2,                 -1,                    3441,        50,           210,              1,              1",
+  "Value": "  5,           3,                 -1,                    3441,        50,           210,              1,              1",
   "Comment": "satCameraId, ultraWideCameraId, frontUltraWideCameraId, caliDataLen, estimateTime, runTimeMemSize,  userArcPreview, useArcCapture"
 },
 
@@ -383,14 +390,6 @@
   "Count": "3",
   "Value": "1, 0.6, 0.6",
   "Comment": "/*skinSoftenLevelSlope*/wide, main, tele"
-},
-
-{
-  "VendorTag": "com.oplus.aps.params.align.pipeline",
-  "Type": "Int32",
-  "Count": "2",
-  "Value": "0, 2",
-  "Comment": "/*when picture size less than buffer size*/fr masterpipeline, bokeh masterpipeline"
 },
 
 {
@@ -1715,7 +1714,7 @@
   "VendorTag": "com.oplus.params.facerectify",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1",
+  "Value": "0",
   "Comment": "front sensor 90°/80° support"
 },
 
@@ -1726,14 +1725,6 @@
   "Count": "1",
   "Value": "2",
   "Comment": "facerectify perf level"
-},
-
-{
-  "VendorTag": "com.oplus.aps.faceDetect.resizevalue",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "960",
-  "Comment": "facerectify faceDetect resize value"
 },
 
 {
@@ -1822,8 +1813,20 @@
   "VendorTag": "com.oplus.aps.sat.logicCameraId",
   "Type": "Int32",
   "Count": "1",
-  "Value": "4"
+  "Value": "5"
 },
+
+{
+  "VendorTag": "com.oplus.aps.parse.logic2physic",
+  "Type": "Int32",
+  "Count": "8",
+  "Value": "1 /*logic camera id front*/,        1 /*physic camera id front*/,
+            2 /*logic camera id wide*/,         0 /*physic camera id wide*/,
+            3 /*logic camera id ultra wide*/,   2 /*physic camera id ultra wide*/,
+            4 /*logic camera id tele*/,         3 /*physic camera id tele*/",
+  "Comment": "two number in a group, odd is logic camera id, even is physic camera id"
+},
+
 
 {
   "VendorTag": "com.oplus.aps.params.repair",
@@ -1865,12 +1868,27 @@
 },
 
 {
+  "VendorTag": "com.oplus.aps.params.bokeh.b2ystride",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "64"
+},
+
+{
   "VendorTag": "com.oplus.aps.professional.iso.cmp",
   "Type": "Int32",
   "Count": "1",
   "Value": " 1 ",
   "Comment": "support manualISO and sensitivity compair"
 },
+
+{
+   "VendorTag": "com.oplus.aps.professional.iso.sensitivity",
+   "Type": "Int32",
+   "Count": "1",
+   "Value": "1"
+},
+
 {
    "VendorTag": "com.oplus.aps.zslexif.enable",
    "Type": "Int32",
@@ -1917,7 +1935,7 @@
 
 {
   "VendorTag": "com.oplus.aps.result.using.string",
-  "Type": "Byte",
+  "Type": "Int32",
   "Count": "1",
   "Value": "1",
   "Comment": "1: using string for aps result instead of meta 'com.oplus.aps.result.data'"
@@ -1943,16 +1961,7 @@
   "VendorTag": "com.oplus.asd.hdrfilter.enable",
   "Type": "Int32",
   "Count": "1",
-  "Value": "0",
-  "Comment": "enable hdr filter, default:1"
-},
-
-{
-  "VendorTag": "com.oplus.asd.skipresult.cnt",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "0",
-  "Comment": "set asd skip callback result count, default:16"
+  "Value": "1"
 }
 ]
 }

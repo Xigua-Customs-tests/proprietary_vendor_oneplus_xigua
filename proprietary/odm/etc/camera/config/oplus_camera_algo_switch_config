@@ -21,6 +21,7 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
+                    "aps_algo_yuvsr" : 1,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -62,6 +63,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -94,7 +96,7 @@
                 {
                     "id" : 0,
                     "enable" : 1,
-                    "aps_algo_blurless" : 1,
+                    "aps_algo_blurless" : 0,
                     "aps_algo_portraitrepair" : 1,
                     "aps_algo_bokeh" : 0,
                     "aps_algo_hdr" : 0,
@@ -105,6 +107,7 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 0,
                     "aps_algo_rotate_mirror" : 1,
@@ -117,12 +120,12 @@
                     "aps_algo_face_info":0,
                     "aps_algo_couple_hdr" : 0,
                     "aps_algo_turbo_hdr" : 1,
-                    "aps_algo_merge_hdr" : 1
+                    "aps_algo_merge_hdr" : 0
                 },
                 {
                     "id" : 1,
                     "enable" : 1,
-                    "aps_algo_blurless" : 1,
+                    "aps_algo_blurless" : 0,
                     "aps_algo_portraitrepair" : 1,
                     "aps_algo_bokeh" : 0,
                     "aps_algo_hdr" : 0,
@@ -130,10 +133,11 @@
                     "aps_algo_raw_hdr" : 0,
                     "aps_algo_pf" : 0,
                     "aps_algo_fusion" : 0,
-                    "aps_algo_portrait_supernight" : 1,
+                    "aps_algo_portrait_supernight" : 0,
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -145,7 +149,7 @@
                     "aps_algo_super_text" : 0,
                     "aps_algo_face_info": 1,
                     "aps_algo_turbo_hdr" : 1,
-                    "aps_algo_merge_hdr" : 1
+                    "aps_algo_merge_hdr" : 0
                 }
             ]
         },
@@ -166,6 +170,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -192,6 +197,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -250,6 +256,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -274,6 +281,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -303,6 +311,7 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 0,
                     "aps_algo_rotate_mirror" : 1,
@@ -338,6 +347,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -362,6 +372,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -392,6 +403,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 0,
                     "aps_algo_rotate_mirror" : 1,
@@ -425,6 +437,7 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -449,6 +462,7 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -561,6 +575,7 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
+                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 0,
                     "aps_algo_rotate_mirror" : 1,
@@ -1168,7 +1183,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_asd", "preview_lsd" ]
+                            "algo_list": [ "preview_lsd" ]
                         }
                     }
                 },
@@ -1208,7 +1223,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_asd", "preview_gesture", "preview_lsd" ]
+                            "algo_list": [ "preview_gesture", "preview_lsd" ]
                         }
                     }
                 }
