@@ -131,6 +131,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_7.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_7.txt \
     vendor/oneplus/salami/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_8.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_8.txt \
     vendor/oneplus/salami/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_9.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_9.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_ak0991x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_ak0991x.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_alsps.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_alsps_hw_tcs3701.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_alsps_hw_tcs3701.json \
