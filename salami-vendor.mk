@@ -44,6 +44,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm23.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm23.txt \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm5.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm5.txt \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm8.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm8.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14_low.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm17.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm22.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm22.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm23.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm23.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm5.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm5.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm8.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm8.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14_low.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm17.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm22.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm22.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm23.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm23.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm5.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm5.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm8.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm8.txt \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm14.txt \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm14_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm14_low.txt \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm17.txt \
@@ -72,6 +88,34 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm8.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm8.txt \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/mcfCheck.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/mcfCheck.txt \
     vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/mcfCheck_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/mcfCheck_low.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14_low.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm17.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm22.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm22.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm23.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm23.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm26.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm26.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm29.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm29.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2_Def.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2_Def.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm32.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm32.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm5.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm5.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm8.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm8.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/mcfCheck.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/mcfCheck.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/mcfCheck_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/mcfCheck_low.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14_low.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm17.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm22.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm22.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm23.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm23.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm26.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm26.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm29.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm29.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2_Def.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2_Def.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm32.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm32.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm5.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm5.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm8.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm8.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/mcfCheck.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/mcfCheck.txt \
+    vendor/oneplus/salami/proprietary/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/mcfCheck_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/mcfCheck_low.txt \
     vendor/oneplus/salami/proprietary/odm/etc/iris_configs.xml:$(TARGET_COPY_OUT_ODM)/etc/iris_configs.xml \
     vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.dat:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.dat \
     vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.fw \
@@ -79,6 +123,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.dat:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.dat \
     vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.fw \
     vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.dat:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.dat \
+    vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.fw \
+    vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.dat:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.dat \
+    vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.fw \
+    vendor/oneplus/salami/proprietary/odm/etc/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_ODM)/etc/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.xml \
     vendor/oneplus/salami/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat \
     vendor/oneplus/salami/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Configuration.txt \
     vendor/oneplus/salami/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID10_MIC_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Parameter_ID10_MIC_VR.txt \
@@ -150,4 +200,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/bdwlan.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0i \
     vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.elf \
     vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/regdb.bin \
-    vendor/oneplus/salami/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt
+    vendor/oneplus/salami/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
+    vendor/oneplus/salami/proprietary/vendor/etc/display/qdcm_calib_data_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.json \
+    vendor/oneplus/salami/proprietary/vendor/etc/display/qdcm_calib_data_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.json \
+    vendor/oneplus/salami/proprietary/vendor/etc/display/qdcm_calib_data_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.json \
+    vendor/oneplus/salami/proprietary/vendor/etc/display/qdcm_calib_data_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.json \
+    vendor/oneplus/salami/proprietary/vendor/etc/ltm_config_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/salami/proprietary/vendor/etc/ltm_config_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/salami/proprietary/vendor/etc/ltm_config_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/salami/proprietary/vendor/etc/ltm_config_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.xml
