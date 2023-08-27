@@ -1586,14 +1586,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.color.config.for.dataspace",
-  "Type": "String",
-  "Count": "3",
-  "Value": "2,1,3"
-
-},
-
-{
   "VendorTag": "com.oplus.trace.launch.time.threshold",
   "Type": "Int32",
   "Count": "1",
