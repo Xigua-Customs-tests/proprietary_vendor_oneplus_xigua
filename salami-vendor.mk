@@ -199,4 +199,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/bdwlan.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0i \
     vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.elf \
     vendor/oneplus/salami/proprietary/odm/etc/wifi/kiwi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/regdb.bin \
-    vendor/oneplus/salami/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt
+    vendor/oneplus/salami/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
+    vendor/oneplus/salami/proprietary/odm/firmware/tp/22811/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/FW_S3908_SAMSUNG.img \
+    vendor/oneplus/salami/proprietary/odm/firmware/tp/22811/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/FW_S3908_SAMSUNG_FAE.img \
+    vendor/oneplus/salami/proprietary/odm/firmware/tp/22811/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/LIMIT_S3908_SAMSUNG.img
