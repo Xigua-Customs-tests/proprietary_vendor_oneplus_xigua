@@ -12,6 +12,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/acdbdata/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_cal.acdb \
     vendor/oneplus/salami/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/salami/proprietary/odm/etc/camera/camera_engmode.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/camera_engmode.xml \
+    vendor/oneplus/salami/proprietary/odm/etc/camera/config/camera_third_party_feature_config.protobuf:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_third_party_feature_config.protobuf \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/camera_unit_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_config \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/camera_unit_feature_config.protobuf:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_feature_config.protobuf \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/imx581:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx581 \
@@ -22,6 +23,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/oplus_camera_algo_switch_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_algo_switch_config \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config \
+    vendor/oneplus/salami/proprietary/odm/etc/camera/config/oplus_camera_preview_decision_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_preview_decision_config.json \
+    vendor/oneplus/salami/proprietary/odm/etc/camera/config/oplus_preview_decision_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_preview_decision_params.json \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/s5k3p9:$(TARGET_COPY_OUT_ODM)/etc/camera/config/s5k3p9 \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/s5kjn1sq03:$(TARGET_COPY_OUT_ODM)/etc/camera/config/s5kjn1sq03 \
     vendor/oneplus/salami/proprietary/odm/etc/camera/config/sr_params.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/config/sr_params.xml \
@@ -187,8 +190,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_bmi26x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_bmi26x.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_bmp380.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_bmp380.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_cct_rear.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_cct_rear.json \
+    vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_freefall.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_freefall.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_icm4x6xx.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_icm4x6xx.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_mmc56x3x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_mmc56x3x.json \
+    vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_oplus_lay.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_oplus_lay.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_sx933x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_sx933x_0.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/kailua_mtp_sx933x_down_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kailua_mtp_sx933x_down_0.json \
     vendor/oneplus/salami/proprietary/odm/etc/sensor/config/lux_aod.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lux_aod.json \
@@ -202,4 +207,5 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/salami/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/oneplus/salami/proprietary/odm/firmware/tp/22811/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/FW_S3908_SAMSUNG.img \
     vendor/oneplus/salami/proprietary/odm/firmware/tp/22811/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/FW_S3908_SAMSUNG_FAE.img \
+    vendor/oneplus/salami/proprietary/odm/firmware/tp/22811/FW_S3908_SAMSUNG_sys_edge_touch_config.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/FW_S3908_SAMSUNG_sys_edge_touch_config.img \
     vendor/oneplus/salami/proprietary/odm/firmware/tp/22811/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/LIMIT_S3908_SAMSUNG.img

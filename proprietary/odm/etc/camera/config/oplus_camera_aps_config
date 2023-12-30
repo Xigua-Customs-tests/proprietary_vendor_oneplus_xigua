@@ -1,5 +1,5 @@
 {
-"file_version" : 13.012, // Andorid + version, 13.001 means Android 13 & version 001
+"file_version" : 14.020, // Andorid + version, 14.001 means Android 14 & version 001
 "file_data" : [
 
 {
@@ -90,7 +90,7 @@
   "VendorTag": "com.oplus.aps.decision.override",
   "Type": "String",
   "Count": "18",
-  "Value": "22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811, 22811"
+  "Value": "22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U, 22811U"
 },
 
 {
@@ -166,6 +166,15 @@
 },
 
 {
+  "VendorTag": "com.oplus.aps.params.rtb.lowlight.rtbmsg.thresh",
+  "Type": "Int32",
+  "Count": "8",
+  "Value": "  6000,   0,     6000,   0,  0,  0,  0,  0",
+  "Comment": "rear1X, front, rear3X, NA, NA, NA, NA, NA,
+              In dark environments, the distance parameter is not accurate, set a threshold to shield wrong msg"
+},
+
+{
   "VendorTag": "com.oplus.aps.params.rectify",
   "Type": "Int32",
   "Count": "8",
@@ -201,7 +210,7 @@
   "VendorTag": "com.oplus.aps.params.ultrawide.upscale",
   "Type": "Int32",
   "Count": "8",
-  "Value": "  2,             250,          50,             4,                          1600,            16777216,      8000,            6000",
+  "Value": "  3,             250,          50,             4,                          1600,            16777216,      8000,            6000",
   "Comment": "logicCameraId, estimateTime, runTimeMemSize, numberOfProcessingThreads, ultraHighSharpen, bufferSize16M, outputWidth8000, outputWidth6000"
 },
 
@@ -209,7 +218,7 @@
   "VendorTag": "com.oplus.aps.params.tele.upscale",
   "Type": "Int32",
   "Count": "8",
-  "Value": "  3,             250,          50,             4,                          1600,            16777216,      6560,            4928",
+  "Value": "  4,             250,          50,             4,                          1600,            16777216,      6560,            4928",
   "Comment": "logicCameraId, estimateTime, runTimeMemSize, numberOfProcessingThreads, ultraHighSharpen, bufferSize16M, outputWidth8000, outputWidth6000"
 },
 
@@ -494,8 +503,16 @@
   "VendorTag": "com.oplus.aps.params.gesture",
   "Type": "Float",
   "Count": "6",
-  "Value": "2, 0.75, 1, 2, 4, 3",
+  "Value": "2, 0.75, 1, 2, 4, 1",
   "Comment": "maxHandNum, clsSmoothFactor, narutoGesture, detectionFreq, delayFrameCount, scaling"
+},
+
+{
+  "VendorTag": "com.oplus.aps.asdPipeline.downScaleRatio",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2",
+  "Comment": "asdBufferDownScaleRatio{algo support min size, asd:224*224 lsd:224*224 gesture:320*320}, scale 2 or 4 mips optimal"
 },
 
 {
@@ -1728,6 +1745,14 @@
 },
 
 {
+  "VendorTag": "com.oplus.aps.faceDetect.resizevalue",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "960",
+  "Comment": "facerectify faceDetect resize value"
+},
+
+{
   "VendorTag": "com.oplus.aps.support.normal.night",
   "Type": "Int32",
   "Count": "1",
@@ -1883,13 +1908,6 @@
 },
 
 {
-   "VendorTag": "com.oplus.aps.professional.iso.sensitivity",
-   "Type": "Int32",
-   "Count": "1",
-   "Value": "1"
-},
-
-{
    "VendorTag": "com.oplus.aps.zslexif.enable",
    "Type": "Int32",
    "Count": "1",
@@ -1961,7 +1979,46 @@
   "VendorTag": "com.oplus.asd.hdrfilter.enable",
   "Type": "Int32",
   "Count": "1",
+  "Value": "0",
+  "Comment": "enable hdr filter, default:1"
+},
+
+{
+  "VendorTag": "com.oplus.asd.skipresult.cnt",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0",
+  "Comment": "set asd skip callback result count, default:16"
+},
+
+{
+  "VendorTag": "com.oplus.asd.uninit.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+},
+
+{
+  "VendorTag": "com.oplus.aps.offline.need.abort",
+  "Type": "Int32",
+  "Count": "1",
   "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.inner.turboraw.orms.params",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1, 1000",
+  "Comment": "turboraw orms params first params: 1. enable 0. unable  ,secondparams:orms timeout "
+},
+
+{
+  "VendorTag": "com.oplus.aps.memmgr.support.override.dataspace",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "support HardwareBuffer dataspace override, default:0"
 }
 ]
 }

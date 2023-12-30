@@ -1,5 +1,5 @@
 {
-"file_version" : 13.008, // Andorid + version, 13.004 means Android 13 & version 004
+"file_version" : 14.008, // Andorid + version, 14.004 means Android 14 & version 004
 "file_data" : [
 
 {
@@ -200,8 +200,9 @@
 
 {
   "Key": "TURBOERAW_SUPPORT_MOTION_SCENE",
-  "Value": "0",
-  "Comment": "1:support, 0:not support"
+  "Count": "3",
+  "Value": "0,0,0",
+  "Comment": "binning support, 2dol not support, izoom not support"
 },
 
 {

@@ -1,5 +1,5 @@
 {
-    "file_version" : 13.003, // Andorid + version, 13.001 means Android 13 & version 001
+    "file_version" : 14.005, // Andorid + version, 14.001 means Android 14 & version 001
     "aps_version" : 5,  // 2: aps2.0 platfrom; 3: aps3.0 platfrom
     "aps_mode" : 1,     // 0: none; 1: full; 2: only capture; 3: only preview
     "aps_capture_configs" : [
@@ -45,7 +45,7 @@
                     "aps_algo_tilt_shift" : 1,
                     "aps_algo_ice_ainr" : 1,
                     "aps_algo_ai_sr" : 1,
-                    "aps_algo_merge_hdr" : 0,
+                    "aps_algo_merge_hdr" : 1,
                     "aps_algo_turbo_hdr" : 1,
                     "aps_algo_aimoon" : 0
                 },
@@ -1183,7 +1183,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_lsd" ]
+                            "algo_list": [ "preview_asd", "preview_lsd" ]
                         }
                     }
                 },
@@ -1223,7 +1223,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_gesture", "preview_lsd" ]
+                            "algo_list": [ "preview_asd", "preview_gesture", "preview_lsd" ]
                         }
                     }
                 }
@@ -1874,7 +1874,7 @@
                             "third_input_height": 0,
                             "output_width": 1440,
                             "output_height": 1080,
-                            "skip_frame_cnt": 0,
+                            "skip_frame_cnt": 7,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
                             "algo_list": [ "preview_asd", "preview_lsd" ]
@@ -2432,6 +2432,34 @@
                 },
                 {
                     "id": 3,
+                    "camera_num": 1,
+                    "separate_preview_video": 0,
+                    "pipelines": {
+                        "preview": {
+                            "enable": 1,
+                            "master_input_width": 1440,
+                            "master_input_height": 1080,
+                            "slave_input_width": 0,
+                            "slave_input_height": 0,
+                            "third_input_width": 0,
+                            "third_input_height": 0,
+                            "output_width": 1440,
+                            "output_height": 1080,
+                            "skip_frame_cnt": 0,
+                            "pipeline_copy_from": "",
+                            "algonode_copy_from": "",
+                            "algo_list": [ "preview_lsd", "preview_edge_filter" ]
+                        },
+                        "video": {
+                            "enable": 0
+                        },
+                        "asd": {
+                            "enable": 0
+                        }
+                    }
+                },
+                {
+                    "id": 4,
                     "camera_num": 1,
                     "separate_preview_video": 0,
                     "pipelines": {

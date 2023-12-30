@@ -93,7 +93,7 @@ Pixelworks Inc. Company Confidential Strictly Private-->
 <!--Gamut4 is multiple brightness-->
 <!--Gamut13 is multiple brightness-->
 <!--Gamut16 is multiple brightness-->
-<InParmList Chip="5" Panel="0x10006" Display="0" Version="112">
+<InParmList Chip="5" Panel="0x10006" Display="0" Version="113">
     <InParm Index="1" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm2.txt</InParm>
     <InParm Index="4" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
     <InParm Index="7" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm8.txt</InParm>
@@ -117,7 +117,7 @@ Pixelworks Inc. Company Confidential Strictly Private-->
 <!--Gamut4 is multiple brightness-->
 <!--Gamut13 is multiple brightness-->
 <!--Gamut16 is multiple brightness-->
-<InParmList Chip="5" Panel="0x10007" Display="0" Version="112">
+<InParmList Chip="5" Panel="0x10007" Display="0" Version="113">
     <InParm Index="1" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm2.txt</InParm>
     <InParm Index="4" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
     <InParm Index="7" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm8.txt</InParm>
@@ -200,6 +200,8 @@ Pixelworks Inc. Company Confidential Strictly Private-->
     <InParm Index="12" Interpolation="2">10/12,9/9</InParm>
     <InParm Index="13" Interpolation="2">4/5,9/9</InParm>
     <InParm Index="14" Interpolation="2">11/13,9/9</InParm>
+    <InParm Index="19" Opt="1" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
+    <InParm Index="20" Opt="8" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm17.txt</InParm>
 </InParmList>
 
 <!--Iris7 panel calibration of iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel-->
@@ -218,6 +220,8 @@ Pixelworks Inc. Company Confidential Strictly Private-->
     <InParm Index="12" Interpolation="2">10/12,9/9</InParm>
     <InParm Index="13" Interpolation="2">4/5,9/9</InParm>
     <InParm Index="14" Interpolation="2">11/13,9/9</InParm>
+    <InParm Index="19" Opt="1" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
+    <InParm Index="20" Opt="8" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm17.txt</InParm>
 </InParmList>
 
 <!--Iris7 panel calibration of iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel-->
@@ -236,6 +240,8 @@ Pixelworks Inc. Company Confidential Strictly Private-->
     <InParm Index="12" Interpolation="2">10/12,9/9</InParm>
     <InParm Index="13" Interpolation="2">4/5,9/9</InParm>
     <InParm Index="14" Interpolation="2">11/13,9/9</InParm>
+    <InParm Index="19" Opt="1" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
+    <InParm Index="20" Opt="8" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm17.txt</InParm>
 </InParmList>
 
 <!--Iris7 panel calibration of iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel-->
@@ -254,6 +260,8 @@ Pixelworks Inc. Company Confidential Strictly Private-->
     <InParm Index="12" Interpolation="2">10/12,9/9</InParm>
     <InParm Index="13" Interpolation="2">4/5,9/9</InParm>
     <InParm Index="14" Interpolation="2">11/13,9/9</InParm>
+    <InParm Index="19" Opt="1" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
+    <InParm Index="20" Opt="8" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm17.txt</InParm>
 </InParmList>
 
 
@@ -275,6 +283,8 @@ Pixelworks Inc. Company Confidential Strictly Private-->
 <PxlwSuperResolutionRateList Id="2" Game="3">
     <PxlwSuperResolution Input="812x1812" Output="1080x2412" Count="4">10,12,9,12</PxlwSuperResolution>
     <PxlwSuperResolution Input="812x1812" Output="1440x3216" Count="4">10,12,10,12</PxlwSuperResolution>
+    <PxlwSuperResolution Input="860x1920" Output="1080x2412" Count="4">10,12,9,12</PxlwSuperResolution>
+    <PxlwSuperResolution Input="860x1920" Output="1440x3216" Count="4">10,12,10,12</PxlwSuperResolution>
     <PxlwSuperResolution Input="1080x2412" Output="1080x2412" Count="4">10,12,9,12</PxlwSuperResolution>
     <PxlwSuperResolution Input="1440x3216" Output="1440x3216" Count="4">10,12,10,12</PxlwSuperResolution>
 </PxlwSuperResolutionRateList>
@@ -328,7 +338,7 @@ Pixelworks Inc. Company Confidential Strictly Private-->
 <PxlwSdr2hdrGroup>
 <!--all off-->
 <PxlwSdr2hdrList Id="0">
-	<PxlwSdr2hdrInfo Sdr2hdr="0" Ai="0" />
+	<PxlwSdr2hdrInfo Sdr2hdr="0"/>
 </PxlwSdr2hdrList>
 
 <!--video scene-->
@@ -363,7 +373,7 @@ Pixelworks Inc. Company Confidential Strictly Private-->
 
 <!--low power video apl scene-->
 <PxlwSdr2hdrList Id="7">
-	<PxlwSdr2hdrInfo Sdr2hdr="0" ColorGamut="22" AnalogBypassMode="1" SupportApl="1" />
+	<PxlwSdr2hdrInfo Sdr2hdr="0" ColorGamut="22" AnalogBypassMode="1" SupportApl="0" />
 </PxlwSdr2hdrList>
 
 <!--shadow enhance filter-->
