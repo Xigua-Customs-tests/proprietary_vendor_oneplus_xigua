@@ -1,5 +1,5 @@
 {
-    "22861":{
+    "22851":{
         "platform_config":{
             "sensor_arch":"qcom_sensor_see"
         },
@@ -7,14 +7,8 @@
             "android.sensor.accelerometer":{
                 "type":1,
                 "support":"true",
-                "module":"icm4x6xx|bmi26x",
+                "module":"icm4x6xx",
                 "icm4x6xx":{
-                    "mode":"batch_cali|factory_cali",
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                },
-                "bmi26x":{
                     "mode":"batch_cali|factory_cali",
                     "offset_x": 0.0,
                     "offset_y": 0.0,
@@ -24,10 +18,7 @@
             "android.sensor.magnetic_field":{
                 "type":2,
                 "support":"true",
-                "module":"ak0991x|mmc56x3x",
-                "ak0991x":{
-                    "mode":"batch_cali"
-                },
+                "module":"mmc56x3x",
                 "mmc56x3x":{
                     "mode":"batch_cali"
                 }
@@ -35,15 +26,8 @@
             "android.sensor.gyroscope":{
                 "type":4,
                 "support":"true",
-                "module":"icm4x6xx|bmi26x",
+                "module":"icm4x6xx",
                 "icm4x6xx":{
-                    "mode":"batch_cali|factory_cali",
-                    "radian_threshold":0.05,
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                },
-                "bmi26x":{
                     "mode":"batch_cali|factory_cali",
                     "radian_threshold":0.05,
                     "offset_x": 0.0,
@@ -54,23 +38,21 @@
             "android.sensor.light":{
                 "type":5,
                 "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
+                "module":"module_ignore",
+                "module_ignore":{
                     "mode":"no_aftersale"
                 }
             },
             "android.sensor.proximity":{
                 "type":8,
                 "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
-                    "mode":"ignore_mean|micro_gap|factory_cali",
-                    "delta_threshold":150,
+                "module":"tcs3720",
+                "tcs3720":{
+                    "mode":"ignore_mean|under_screen|factory_cali",
                     "ps0_offset": 0,
                     "ps0_distance_delta": 110,
-                    "ps0_cali_para": 0,
-                    "ps1_offset": 0,
-                    "ps1_distance_delta": 0
+                    "ps0_offset_lp": 0,
+                    "ps0_distance_1cm_delta": 110
                 }
             },
             "android.sensor.step_counter":{
@@ -84,165 +66,8 @@
             "qti.sensor.rgb":{
                 "type":33171001,
                 "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
-                    "mode":"factory_cali",
-                    "R_cali":1000,
-                    "G_cali":1000,
-                    "B_cali":1000,
-                    "C_cali":1000,
-                    "W_cali":1000,
-                    "F_cali":1000
-                }
-            },
-            "qti.sensor.sensor_logger":{
-                "type":33171024,
-                "support":"true",
-                "module":"module_ignore"
-            },
-            "qti.sensor.rgb_rear":{
-                "type":33171052,
-                "support":"true",
-                "module":"as7352",
-                "as7352":{
-                    "mode":"factory_cali",
-                    "R_cali":1000,
-                    "G_cali":1000,
-                    "B_cali":1000,
-                    "C_cali":1000,
-                    "W_cali":1000,
-                    "F_cali":1000
-                }
-            },
-            "qti.sensor.flicker_rear":{
-                "type":33171054,
-                "support":"true"
-            },
-            "qti.sensor.spectral_rear":{
-                "type":33171059,
-                "support":"true",
-                "module":"as7352",
-                "as7352":{
-                    "mode":"factory_cali",
-                    "XL_cali_gain1":1000,
-                    "XL_cali_gain2":1000,
-                    "Y_cali_gain1":1000,
-                    "Y_cali_gain2":1000,
-                    "Z_cali_gain1":1000,
-                    "Z_cali_gain2":1000,
-                    "NIR_cali_gain1":1000,
-                    "NIR_cali_gain2":1000,
-                    "VIS_cali_gain1":1000,
-                    "VIS_cali_gain2":1000,
-                    "F1_cali_gain1":1000,
-                    "F1_cali_gain2":1000,
-                    "F2_cali_gain1":1000,
-                    "F2_cali_gain2":1000,
-                    "F3_cali_gain1":1000,
-                    "F3_cali_gain2":1000,
-                    "F4_cali_gain1":1000,
-                    "F4_cali_gain2":1000,
-                    "F5_cali_gain1":1000,
-                    "F5_cali_gain2":1000,
-                    "F6_cali_gain1":1000,
-                    "F6_cali_gain2":1000,
-                    "F7_cali_gain1":1000,
-                    "F7_cali_gain2":1000,
-                    "F8_cali_gain1":1000,
-                    "F8_cali_gain2":1000,
-                    "F_cali_gain1":1000,
-                    "F_cali_gain2":1000
-                }
-            }
-        }
-    },
-    "sku_23":{
-        "platform_config":{
-            "sensor_arch":"qcom_sensor_see"
-        },
-        "sensor_config":{
-            "android.sensor.accelerometer":{
-                "type":1,
-                "support":"true",
-                "module":"icm4x6xx|bmi26x",
-                "icm4x6xx":{
-                    "mode":"batch_cali|factory_cali",
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                },
-                "bmi26x":{
-                    "mode":"batch_cali|factory_cali",
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                }
-            },
-            "android.sensor.magnetic_field":{
-                "type":2,
-                "support":"true",
-                "module":"ak0991x|mmc56x3x",
-                "ak0991x":{
-                    "mode":"batch_cali"
-                },
-                "mmc56x3x":{
-                    "mode":"batch_cali"
-                }
-            },
-            "android.sensor.gyroscope":{
-                "type":4,
-                "support":"true",
-                "module":"icm4x6xx|bmi26x",
-                "icm4x6xx":{
-                    "mode":"batch_cali|factory_cali",
-                    "radian_threshold":0.05,
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                },
-                "bmi26x":{
-                    "mode":"batch_cali|factory_cali",
-                    "radian_threshold":0.05,
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                }
-            },
-            "android.sensor.light":{
-                "type":5,
-                "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
-                    "mode":"no_aftersale"
-                }
-            },
-            "android.sensor.proximity":{
-                "type":8,
-                "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
-                    "mode":"ignore_mean|micro_gap|factory_cali",
-                    "delta_threshold":150,
-                    "ps0_offset": 0,
-                    "ps0_distance_delta": 110,
-                    "ps0_cali_para": 0,
-                    "ps1_offset": 0,
-                    "ps1_distance_delta": 0
-                }
-            },
-            "android.sensor.step_counter":{
-                "type":19,
-                "support":"true",
                 "module":"module_ignore",
                 "module_ignore":{
-                    "mode":"virtual_sensor"
-                }
-            },
-            "qti.sensor.rgb":{
-                "type":33171001,
-                "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
                     "mode":"factory_cali",
                     "R_cali":1000,
                     "G_cali":1000,
@@ -252,6 +77,75 @@
                     "F_cali":1000
                 }
             },
+            "qti.sensor.wise_rgb":{
+                "type":33171028,
+                "support":"true",
+                "module":"tcs3720",
+                "tcs3720":{
+                    "mode":"factory_cali|hight_speed_pwm|rgb_in_service|support_multi_bri|clock_cali_60hz",
+                    "clock":-1,
+                    "R_cali":1000,
+                    "G_cali":1000,
+                    "B_cali":1000,
+                    "C_cali":1000,
+                    "W_cali":1000,
+                    "F_cali":1000,
+                    "leak_cali_bri_min_boe":1032,
+                    "leak_cali_bri_mid_boe":1328,
+                    "R_VIEW_R_MAX":-1,
+                    "R_VIEW_G_MAX":-1,
+                    "R_VIEW_B_MAX":-1,
+                    "R_VIEW_C_MAX":-1,
+                    "G_VIEW_R_MAX":-1,
+                    "G_VIEW_G_MAX":-1,
+                    "G_VIEW_B_MAX":-1,
+                    "G_VIEW_C_MAX":-1,
+                    "B_VIEW_R_MAX":-1,
+                    "B_VIEW_G_MAX":-1,
+                    "B_VIEW_B_MAX":-1,
+                    "B_VIEW_C_MAX":-1,
+                    "W_VIEW_R_MAX":-1,
+                    "W_VIEW_G_MAX":-1,
+                    "W_VIEW_B_MAX":-1,
+                    "W_VIEW_C_MAX":-1,
+                    "R_VIEW_R_MAX_L":-1,
+                    "R_VIEW_G_MAX_L":-1,
+                    "R_VIEW_B_MAX_L":-1,
+                    "R_VIEW_C_MAX_L":-1,
+                    "G_VIEW_R_MAX_L":-1,
+                    "G_VIEW_G_MAX_L":-1,
+                    "G_VIEW_B_MAX_L":-1,
+                    "G_VIEW_C_MAX_L":-1,
+                    "B_VIEW_R_MAX_L":-1,
+                    "B_VIEW_G_MAX_L":-1,
+                    "B_VIEW_B_MAX_L":-1,
+                    "B_VIEW_C_MAX_L":-1,
+                    "W_VIEW_R_MAX_L":-1,
+                    "W_VIEW_G_MAX_L":-1,
+                    "W_VIEW_B_MAX_L":-1,
+                    "W_VIEW_C_MAX_L":-1,
+                    "R_VIEW_R_MAX_M":-1,
+                    "R_VIEW_G_MAX_M":-1,
+                    "R_VIEW_B_MAX_M":-1,
+                    "R_VIEW_C_MAX_M":-1,
+                    "G_VIEW_R_MAX_M":-1,
+                    "G_VIEW_G_MAX_M":-1,
+                    "G_VIEW_B_MAX_M":-1,
+                    "G_VIEW_C_MAX_M":-1,
+                    "B_VIEW_R_MAX_M":-1,
+                    "B_VIEW_G_MAX_M":-1,
+                    "B_VIEW_B_MAX_M":-1,
+                    "B_VIEW_C_MAX_M":-1,
+                    "W_VIEW_R_MAX_M":-1,
+                    "W_VIEW_G_MAX_M":-1,
+                    "W_VIEW_B_MAX_M":-1,
+                    "W_VIEW_C_MAX_M":-1
+                }
+            },
+            "qti.sensor.consumer_ir":{
+                "type":33171999,
+                "support":"true"
+            },
             "qti.sensor.sensor_logger":{
                 "type":33171024,
                 "support":"true",
@@ -260,8 +154,8 @@
             "qti.sensor.rgb_rear":{
                 "type":33171052,
                 "support":"true",
-                "module":"as7352",
-                "as7352":{
+                "module":"stk37600",
+                "stk37600":{
                     "mode":"factory_cali",
                     "R_cali":1000,
                     "G_cali":1000,
@@ -275,253 +169,9 @@
                 "type":33171054,
                 "support":"true"
             },
-            "qti.sensor.spectral_rear":{
-                "type":33171059,
-                "support":"true",
-                "module":"as7352",
-                "as7352":{
-                    "mode":"factory_cali",
-                    "XL_cali_gain1":1000,
-                    "XL_cali_gain2":1000,
-                    "Y_cali_gain1":1000,
-                    "Y_cali_gain2":1000,
-                    "Z_cali_gain1":1000,
-                    "Z_cali_gain2":1000,
-                    "NIR_cali_gain1":1000,
-                    "NIR_cali_gain2":1000,
-                    "VIS_cali_gain1":1000,
-                    "VIS_cali_gain2":1000,
-                    "F1_cali_gain1":1000,
-                    "F1_cali_gain2":1000,
-                    "F2_cali_gain1":1000,
-                    "F2_cali_gain2":1000,
-                    "F3_cali_gain1":1000,
-                    "F3_cali_gain2":1000,
-                    "F4_cali_gain1":1000,
-                    "F4_cali_gain2":1000,
-                    "F5_cali_gain1":1000,
-                    "F5_cali_gain2":1000,
-                    "F6_cali_gain1":1000,
-                    "F6_cali_gain2":1000,
-                    "F7_cali_gain1":1000,
-                    "F7_cali_gain2":1000,
-                    "F8_cali_gain1":1000,
-                    "F8_cali_gain2":1000,
-                    "F_cali_gain1":1000,
-                    "F_cali_gain2":1000
-                }
-            },
-            "qti.sensor.sars":{
-                "type":33171029,
-                "support":"true",
-                "module":"sx933x_down",
-                "sx933x_down":{
-                    "mode":"single_channel",
-                    "test_round": 1
-                }
-            },
-            "qti.sensor.sar":{
-                "type":33171025,
-                "support":"true",
-                "module":"sx933x",
-                "sx933x":{
-                    "mode":"single_channel",
-                    "test_round": 1
-                }
-            }
-        }
-    },
-    "sku_31":{
-        "platform_config":{
-            "sensor_arch":"qcom_sensor_see"
-        },
-        "sensor_config":{
-            "android.sensor.accelerometer":{
-                "type":1,
-                "support":"true",
-                "module":"icm4x6xx|bmi26x",
-                "icm4x6xx":{
-                    "mode":"batch_cali|factory_cali",
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                },
-                "bmi26x":{
-                    "mode":"batch_cali|factory_cali",
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                }
-            },
-            "android.sensor.magnetic_field":{
-                "type":2,
-                "support":"true",
-                "module":"ak0991x|mmc56x3x",
-                "ak0991x":{
-                    "mode":"batch_cali"
-                },
-                "mmc56x3x":{
-                    "mode":"batch_cali"
-                }
-            },
-            "android.sensor.gyroscope":{
-                "type":4,
-                "support":"true",
-                "module":"icm4x6xx|bmi26x",
-                "icm4x6xx":{
-                    "mode":"batch_cali|factory_cali",
-                    "radian_threshold":0.05,
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                },
-                "bmi26x":{
-                    "mode":"batch_cali|factory_cali",
-                    "radian_threshold":0.05,
-                    "offset_x": 0.0,
-                    "offset_y": 0.0,
-                    "offset_z": 0.0
-                }
-            },
-            "android.sensor.light":{
-                "type":5,
-                "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
-                    "mode":"no_aftersale"
-                }
-            },
-            "android.sensor.proximity":{
-                "type":8,
-                "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
-                    "mode":"ignore_mean|micro_gap|factory_cali",
-                    "delta_threshold":150,
-                    "ps0_offset": 0,
-                    "ps0_distance_delta": 110,
-                    "ps0_cali_para": 0,
-                    "ps1_offset": 0,
-                    "ps1_distance_delta": 0
-                }
-            },
-            "android.sensor.step_counter":{
-                "type":19,
-                "support":"true",
-                "module":"module_ignore",
-                "module_ignore":{
-                    "mode":"virtual_sensor"
-                }
-            },
-            "qti.sensor.rgb":{
-                "type":33171001,
-                "support":"true",
-                "module":"tcs3701",
-                "tcs3701":{
-                    "mode":"factory_cali",
-                    "R_cali":1000,
-                    "G_cali":1000,
-                    "B_cali":1000,
-                    "C_cali":1000,
-                    "W_cali":1000,
-                    "F_cali":1000
-                }
-            },
-            "android.sensor.pressure":{
-                "type":6,
-                "support":"true",
-                "module":"lps22hb|bosch_bmp380",
-                "lps22hb":{
-                    "mode":"factory_cali",
-                    "offset_standard":10000,
-                    "delta_standard":1000,
-                    "sample_amount":20,
-                    "cali_offset":0
-                },
-                "bosch_bmp380":{
-                    "mode":"factory_cali",
-                    "offset_standard":10000,
-                    "delta_standard":1000,
-                    "sample_amount":20,
-                    "cali_offset":0
-                }
-            },
-            "qti.sensor.sensor_logger":{
-                "type":33171024,
-                "support":"true",
-                "module":"module_ignore"
-            },
-            "qti.sensor.rgb_rear":{
-                "type":33171052,
-                "support":"true",
-                "module":"as7352",
-                "as7352":{
-                    "mode":"factory_cali",
-                    "R_cali":1000,
-                    "G_cali":1000,
-                    "B_cali":1000,
-                    "C_cali":1000,
-                    "W_cali":1000,
-                    "F_cali":1000
-                }
-            },
-            "qti.sensor.flicker_rear":{
-                "type":33171054,
+            "qti.sensor.screen_sn":{
+                "type":33171996,
                 "support":"true"
-            },
-            "qti.sensor.spectral_rear":{
-                "type":33171059,
-                "support":"true",
-                "module":"as7352",
-                "as7352":{
-                    "mode":"factory_cali",
-                    "XL_cali_gain1":1000,
-                    "XL_cali_gain2":1000,
-                    "Y_cali_gain1":1000,
-                    "Y_cali_gain2":1000,
-                    "Z_cali_gain1":1000,
-                    "Z_cali_gain2":1000,
-                    "NIR_cali_gain1":1000,
-                    "NIR_cali_gain2":1000,
-                    "VIS_cali_gain1":1000,
-                    "VIS_cali_gain2":1000,
-                    "F1_cali_gain1":1000,
-                    "F1_cali_gain2":1000,
-                    "F2_cali_gain1":1000,
-                    "F2_cali_gain2":1000,
-                    "F3_cali_gain1":1000,
-                    "F3_cali_gain2":1000,
-                    "F4_cali_gain1":1000,
-                    "F4_cali_gain2":1000,
-                    "F5_cali_gain1":1000,
-                    "F5_cali_gain2":1000,
-                    "F6_cali_gain1":1000,
-                    "F6_cali_gain2":1000,
-                    "F7_cali_gain1":1000,
-                    "F7_cali_gain2":1000,
-                    "F8_cali_gain1":1000,
-                    "F8_cali_gain2":1000,
-                    "F_cali_gain1":1000,
-                    "F_cali_gain2":1000
-                }
-            },
-            "qti.sensor.sars":{
-                "type":33171029,
-                "support":"true",
-                "module":"sx933x_down",
-                "sx933x_down":{
-                    "mode":"single_channel",
-                    "test_round": 1
-                }
-            },
-            "qti.sensor.sar":{
-                "type":33171025,
-                "support":"true",
-                "module":"sx933x",
-                "sx933x":{
-                    "mode":"single_channel",
-                    "test_round": 1
-                }
             }
         }
     }

@@ -1,5 +1,5 @@
 {
-    "file_version" : 14.005, // Andorid + version, 14.001 means Android 14 & version 001
+    "file_version" : 13.003, // Andorid + version, 13.001 means Android 13 & version 001
     "aps_version" : 5,  // 2: aps2.0 platfrom; 3: aps3.0 platfrom
     "aps_mode" : 1,     // 0: none; 1: full; 2: only capture; 3: only preview
     "aps_capture_configs" : [
@@ -10,7 +10,6 @@
                     "id" : 0,
                     "enable" : 1,
                     "aps_algo_blurless" : 1,
-                    "aps_algo_text_enhance" : 1,
                     "aps_algo_portraitrepair" : 1,
                     "aps_algo_bokeh" : 0,
                     "aps_algo_hdr" : 0,
@@ -21,8 +20,8 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
-                    "aps_algo_yuvsr" : 1,
                     "aps_algo_watermark" : 1,
+                    "aps_algo_facebase_retouch" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
                     "aps_algo_filter" : 1,
@@ -36,7 +35,7 @@
                     "aps_algo_supersensor" : 0,
                     "aps_algo_face_rectify" : 1,
                     "aps_algo_super_text" : 1,
-                    "aps_algo_pf_v1" : 1,
+                    "aps_algo_pf_v1" : 0,
                     "aps_algo_dered_eye" : 0,
                     "aps_algo_face_info":1,
                     "aps_algo_scportrait" : 0,
@@ -47,7 +46,11 @@
                     "aps_algo_ai_sr" : 1,
                     "aps_algo_merge_hdr" : 1,
                     "aps_algo_turbo_hdr" : 1,
-                    "aps_algo_aimoon" : 0
+                    "aps_algo_text_enhance" : 1,
+                    "aps_algo_aimoon" : 0,
+                    "aps_algo_sw_png_encode": 1,
+                    "aps_algo_mask_refine" : 1,
+                    "aps_algo_mfnr" : 0
                 },
                 {
                     "id" : 1,
@@ -63,9 +66,10 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
+                    "aps_algo_facebase_retouch" : 1,
                     "aps_algo_face_beauty" : 1,
+                    "aps_algo_face_restore" : 0,
                     "aps_algo_rotate_mirror" : 1,
                     "aps_algo_filter" : 1,
                     "aps_algo_single_blur" : 0,
@@ -84,9 +88,12 @@
                     "aps_algo_scportrait" : 0,
                     "aps_algo_pic_best" : 0,
                     "aps_algo_cfr" : 0,
-                    "aps_algo_ai_deblur" : 1,
+                    "aps_algo_ai_deblur" : 0,
                     "aps_algo_turbo_hdr" : 1,
-                    "aps_algo_merge_hdr" : 1
+                    "aps_algo_merge_hdr" : 1,
+                    "aps_algo_sw_png_encode": 1,
+                    "aps_algo_mask_refine" : 1,
+                    "aps_algo_mfnr" : 0
                 }
             ]
         },
@@ -107,8 +114,8 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
+                    "aps_algo_facebase_retouch" : 1,
                     "aps_algo_face_beauty" : 0,
                     "aps_algo_rotate_mirror" : 1,
                     "aps_algo_filter" : 1,
@@ -117,10 +124,14 @@
                     "aps_algo_video_blur" : 0,
                     "aps_algo_darksight" : 0,
                     "aps_algo_super_text" : 0,
-                    "aps_algo_face_info":0,
+                    "aps_algo_face_info": 1,
                     "aps_algo_couple_hdr" : 0,
+                    "aps_algo_cfr" : 1,
                     "aps_algo_turbo_hdr" : 1,
-                    "aps_algo_merge_hdr" : 0
+                    "aps_algo_merge_hdr" : 0,
+                    "aps_algo_sw_png_encode": 1,
+                    "aps_algo_mask_refine" : 1,
+                    "aps_algo_mfnr" : 0
                 },
                 {
                     "id" : 1,
@@ -137,9 +148,10 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
+                    "aps_algo_facebase_retouch" : 1,
                     "aps_algo_face_beauty" : 1,
+                    "aps_algo_face_restore" : 0,
                     "aps_algo_rotate_mirror" : 1,
                     "aps_algo_filter" : 0,
                     "aps_algo_single_blur" : 0,
@@ -149,7 +161,10 @@
                     "aps_algo_super_text" : 0,
                     "aps_algo_face_info": 1,
                     "aps_algo_turbo_hdr" : 1,
-                    "aps_algo_merge_hdr" : 0
+                    "aps_algo_merge_hdr" : 0,
+                    "aps_algo_sw_png_encode": 1,
+                    "aps_algo_mask_refine" : 1,
+                    "aps_algo_mfnr" : 0
                 }
             ]
         },
@@ -170,8 +185,8 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
+                    "aps_algo_facebase_retouch" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
                     "aps_algo_filter" : 1,
@@ -181,7 +196,8 @@
                     "aps_algo_super_text" : 0,
                     "aps_algo_face_info": 1,
                     "aps_algo_turbo_hdr" : 1,
-                    "aps_algo_raw2yuv" : 1
+                    "aps_algo_raw2yuv" : 1,
+                    "aps_algo_mfnr" : 0
                 },
                 {
                     "id" : 1,
@@ -197,9 +213,10 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
+                    "aps_algo_facebase_retouch" : 1,
                     "aps_algo_face_beauty" : 1,
+                    "aps_algo_face_restore" : 0,
                     "aps_algo_rotate_mirror" : 1,
                     "aps_algo_filter" : 1,
                     "aps_algo_single_portrait" : 1,
@@ -208,7 +225,8 @@
                     "aps_algo_super_text" : 0,
                     "aps_algo_face_info" : 1,
                     "aps_algo_merge_hdr" : 0,
-                    "aps_algo_turbo_hdr" : 1
+                    "aps_algo_turbo_hdr" : 1,
+                    "aps_algo_mfnr" : 0
                 }
             ]
         },
@@ -256,7 +274,6 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -266,7 +283,8 @@
                     "aps_algo_video_blur" : 0,
                     "aps_algo_super_text" : 0,
                     "aps_algo_face_info":1,
-                    "aps_algo_dered_eye" : 0
+                    "aps_algo_dered_eye" : 0,
+                    "aps_algo_mfnr" : 0
                 },
                 {
                     "id" : 1,
@@ -281,7 +299,6 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -291,7 +308,8 @@
                     "aps_algo_video_blur" : 0,
                     "aps_algo_super_text" : 0,
                     "aps_algo_face_info":1,
-                    "aps_algo_dered_eye" : 0
+                    "aps_algo_dered_eye" : 0,
+                    "aps_algo_mfnr" : 0
                 }
             ]
         },
@@ -311,7 +329,6 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 0,
                     "aps_algo_rotate_mirror" : 1,
@@ -322,7 +339,8 @@
                     "aps_algo_super_text" : 0,
                     "aps_algo_face_info":1,
                     "aps_algo_dered_eye" : 0,
-                    "aps_algo_super_raw" : 1
+                    "aps_algo_super_raw" : 1,
+                    "aps_algo_mfnr" : 0
                 },
                 {
                     "id" : 1,
@@ -347,7 +365,6 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -372,7 +389,6 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -392,7 +408,7 @@
                 {
                     "id" : 0,
                     "enable" : 1,
-                    "aps_algo_blurless" : 1,
+                    "aps_algo_blurless" : 0,
                     "aps_algo_bokeh" : 0,
                     "aps_algo_hdr" : 0,
                     "aps_algo_lowlight_hdr" : 0,
@@ -403,7 +419,6 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 0,
                     "aps_algo_rotate_mirror" : 1,
@@ -437,7 +452,6 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -462,7 +476,6 @@
                     "aps_algo_rectify" : 0,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 0,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 1,
                     "aps_algo_face_beauty" : 1,
                     "aps_algo_rotate_mirror" : 1,
@@ -575,7 +588,6 @@
                     "aps_algo_rectify" : 1,
                     "aps_algo_supernight" : 0,
                     "aps_algo_superphoto" : 1,
-                    "aps_algo_yuvsr" : 0,
                     "aps_algo_watermark" : 0,
                     "aps_algo_face_beauty" : 0,
                     "aps_algo_rotate_mirror" : 1,
@@ -586,8 +598,11 @@
                     "aps_algo_supersensor" : 0,
                     "aps_algo_super_text" : 1,
                     "aps_algo_face_info": 1,
+                    "aps_algo_text_enhance" : 0,
                     "aps_algo_dered_eye" : 0,
-                    "aps_algo_text_enhance" : 0
+                    "aps_algo_turbo_hdr" : 0,
+                    "aps_algo_hybridraw" : 0,
+                    "aps_algo_mfnr" : 0
                 },
                 {
                     "id" : 1,
@@ -938,6 +953,39 @@
             ]
         },
         {
+             "mode": "macro",
+             "entity": [
+                 {
+                     "id": 0,
+                     "camera_num": 1,
+                     "separate_preview_video": 0,
+                     "pipelines": {
+                         "preview": {
+                             "enable": 1,
+                             "master_input_width": 1440,
+                             "master_input_height": 1080,
+                             "slave_input_width": 0,
+                             "slave_input_height": 0,
+                             "third_input_width": 0,
+                             "third_input_height": 0,
+                             "output_width": 1440,
+                             "output_height": 1080,
+                             "skip_frame_cnt": 0,
+                             "pipeline_copy_from": "",
+                             "algonode_copy_from": "",
+                             "algo_list": [ "preview_lsd" ]
+                         },
+                         "video": {
+                             "enable": 0
+                         },
+                         "asd": {
+                             "enable": 0
+                         }
+                     }
+                 }
+             ]
+},
+        {
             "mode": "commonVideoDummy",
             "entity": [
                 {
@@ -987,6 +1035,39 @@
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
                             "algo_list": [ "preview_lsd" ]
+                        },
+                        "video": {
+                            "enable": 0
+                        },
+                        "asd": {
+                            "enable": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "mode": "superText",
+            "entity": [
+                {
+                    "id": 0,
+                    "camera_num": 1,
+                    "separate_preview_video": 0,
+                    "pipelines": {
+                        "preview": {
+                            "enable": 1,
+                            "master_input_width": 1440,
+                            "master_input_height": 1080,
+                            "slave_input_width": 0,
+                            "slave_input_height": 0,
+                            "third_input_width": 0,
+                            "third_input_height": 0,
+                            "output_width": 1440,
+                            "output_height": 1080,
+                            "skip_frame_cnt": 0,
+                            "pipeline_copy_from": "",
+                            "algonode_copy_from": "",
+                            "algo_list": [ "preview_rectify", "preview_lsd" ]
                         },
                         "video": {
                             "enable": 0
@@ -1080,7 +1161,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_default", "preview_rectify" ]
                         },
                         "video": {
                             "enable": 0
@@ -1183,7 +1264,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_asd", "preview_lsd" ]
+                            "algo_list": [ "preview_lsd" ]
                         }
                     }
                 },
@@ -1283,25 +1364,13 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 0
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 3200,
-                            "master_input_height": 1440,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1440,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 },
@@ -1323,25 +1392,13 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 0
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 3200,
-                            "master_input_height": 1440,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1440,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 }
@@ -1401,7 +1458,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_antibanding", "preview_rectify" ]
+                            "algo_list": [ "preview_antibanding", "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -1419,19 +1476,7 @@
                             "algo_list": [ "video_watermark_process_on_output" ]
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 1920,
-                            "master_input_height": 1080,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1920,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 },
@@ -1453,7 +1498,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -1471,19 +1516,7 @@
                             "algo_list": [ "video_watermark_process_on_output" ]
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 1920,
-                            "master_input_height": 1080,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1920,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 }
@@ -1510,7 +1543,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -1528,19 +1561,7 @@
                             "algo_list": [ "video_watermark_process_on_output" ]
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 1920,
-                            "master_input_height": 1080,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1920,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 },
@@ -1583,7 +1604,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -1601,19 +1622,7 @@
                             "algo_list": [ "video_watermark_process_on_output"]
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 1920,
-                            "master_input_height": 1080,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1920,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 },
@@ -1656,7 +1665,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -1674,19 +1683,7 @@
                             "algo_list": [ "video_watermark_process_on_output"]
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 1920,
-                            "master_input_height": 1080,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1920,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 },
@@ -1713,7 +1710,7 @@
             "entity": [
                 {
                     "id": 0,
-                    "camera_num": 3,
+                    "camera_num": 1,
                     "separate_preview_video": 1,
                     "pipelines": {
                         "preview": {
@@ -1729,7 +1726,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -1742,9 +1739,9 @@
                             "output_width": 1920,
                             "output_height": 1080,
                             "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "pipeline_preview",
-                            "algonode_copy_from": "preview_offline_ipe",
-                            "algo_list": [ "preview_video_eis" ]
+                            "pipeline_copy_from": "",
+                            "algonode_copy_from": "",
+                            "algo_list": [ "video_watermark_process_on_output" ]
                         },
                         "asd": {
                             "enable": 0
@@ -1769,7 +1766,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -1814,25 +1811,13 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 0
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 1920,
-                            "master_input_height": 1080,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1920,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 }
@@ -1859,7 +1844,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_pf", "preview_supereis" ]
+                            "algo_list": [ "preview_supereis" ]
                         },
                         "video": {
                             "enable": 0
@@ -1874,7 +1859,7 @@
                             "third_input_height": 0,
                             "output_width": 1440,
                             "output_height": 1080,
-                            "skip_frame_cnt": 7,
+                            "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
                             "algo_list": [ "preview_asd", "preview_lsd" ]
@@ -1920,7 +1905,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -1938,19 +1923,7 @@
                             "algo_list": [ "video_watermark_process_on_output" ]
                         },
                         "asd": {
-                            "enable": 1,
-                            "master_input_width": 1920,
-                            "master_input_height": 1080,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1920,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd" ]
+                            "enable": 0
                         }
                     }
                 },
@@ -1972,7 +1945,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -2164,7 +2137,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_default" ]
+                            "algo_list": [ "preview_lsd" ]
                         },
                         "video": {
                             "enable": 1,
@@ -2432,34 +2405,6 @@
                 },
                 {
                     "id": 3,
-                    "camera_num": 1,
-                    "separate_preview_video": 0,
-                    "pipelines": {
-                        "preview": {
-                            "enable": 1,
-                            "master_input_width": 1440,
-                            "master_input_height": 1080,
-                            "slave_input_width": 0,
-                            "slave_input_height": 0,
-                            "third_input_width": 0,
-                            "third_input_height": 0,
-                            "output_width": 1440,
-                            "output_height": 1080,
-                            "skip_frame_cnt": 0,
-                            "pipeline_copy_from": "",
-                            "algonode_copy_from": "",
-                            "algo_list": [ "preview_lsd", "preview_edge_filter" ]
-                        },
-                        "video": {
-                            "enable": 0
-                        },
-                        "asd": {
-                            "enable": 0
-                        }
-                    }
-                },
-                {
-                    "id": 4,
                     "camera_num": 1,
                     "separate_preview_video": 0,
                     "pipelines": {

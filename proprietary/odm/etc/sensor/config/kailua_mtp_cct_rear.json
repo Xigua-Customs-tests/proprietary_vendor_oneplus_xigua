@@ -58,24 +58,6 @@
           "data": "0"
         }
       }
-    },
-    ".spectral":{
-      "owner": "cct_rear",
-      ".config":{
-        "owner": "cct_rear",
-        "is_dri":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "hw_id":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "res_idx":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sync_stream":{ "type": "int", "ver": "0",
-          "data": "0"
-        }
-      }
     }
   },
   "cct_rear_platform":{
@@ -89,7 +71,7 @@
         "data": "4"
       },
       "slave_config":{ "type": "int", "ver": "0",
-        "data": "57"
+        "data": "72"
       },
       "min_bus_speed_khz":{ "type": "int", "ver": "0",
         "data": "400"
@@ -101,7 +83,7 @@
         "data": "0"
       },
       "dri_irq_num":{ "type": "int", "ver": "0",
-        "data": "12"
+        "data": "0"
       },
       "irq_pull_type":{ "type": "int", "ver": "0",
         "data": "2"
@@ -134,10 +116,10 @@
     ".boot_cfg":{
       "owner": "cct_rear",
       "publish_sns":{ "type": "int", "ver": "0",
-        "data": "0xf"
+        "data": "0x7"
       },
       "device_id":{ "type": "int", "ver": "0",
-        "data": "0x4"
+        "data": "0x02"
       },
       "timer_size":{ "type": "int", "ver": "0",
         "data": "25"
@@ -146,7 +128,7 @@
         "data": "0x2"
       },
       "para_matrix_index":{ "type": "int", "ver": "0",
-        "data": "2"
+        "data": "0"
       }
     },
     ".als":{
@@ -204,10 +186,7 @@
         "W_cali":{ "type": "flt", "ver": "0",
           "data": "1000.0"
         },
-        "ch5":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch6":{ "type": "flt", "ver": "0",
+        "F_cali":{ "type": "flt", "ver": "0",
           "data": "1000.0"
         },
         "ch7":{ "type": "flt", "ver": "0",
@@ -226,60 +205,6 @@
           "data": "1000.0"
         },
         "ch12":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch13":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "F_cali":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        }
-      },
-      ".fac1_cal":{
-        "owner": "cct_rear",
-        "R_cali":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "G_cali":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "B_cali":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "C_cali":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "W_cali":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch5":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch6":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch7":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch8":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch9":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch10":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch11":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch12":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "ch13":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
-        },
-        "F_cali":{ "type": "flt", "ver": "0",
           "data": "1000.0"
         }
       }

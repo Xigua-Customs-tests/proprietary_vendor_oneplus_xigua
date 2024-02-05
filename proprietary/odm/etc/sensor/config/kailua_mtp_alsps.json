@@ -2,46 +2,7 @@
   "config":
   {
     "hw_platform": ["MTP", "QRD"],
-    "soc_id": [ "519"]
-  },
-  "alsps":{
-    "owner": "sns_alsps",
-    ".als":{
-      "owner": "sns_alsps",
-      ".config":{
-        "owner": "sns_alsps",
-        "is_dri":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "hw_id":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "res_idx":{ "type": "int", "ver": "0",
-          "data": "0"
-       },
-        "sync_stream":{ "type": "int", "ver": "0",
-          "data": "0"
-        }
-      }
-    },
-    ".prox":{
-      "owner": "sns_alsps",
-      ".config":{
-        "owner": "sns_alsps",
-        "is_dri":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "hw_id":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "res_idx":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sync_stream":{ "type": "int", "ver": "0",
-          "data": "0"
-        }
-      }
-    }
+    "soc_id": ["519"]
   },
   "alsps_platform":{
     "owner": "sns_alsps",
@@ -54,7 +15,7 @@
         "data": "2"
       },
       "slave_config":{ "type": "int", "ver": "0",
-        "data": "70"
+        "data": "57"
       },
       "min_bus_speed_khz":{ "type": "int", "ver": "0",
         "data": "400"
@@ -65,7 +26,7 @@
       "reg_addr_type":{ "type": "int", "ver": "0",
         "data": "0"
       },
-      "dri_irq_num":{ "type": "int", "ver": "1",
+      "dri_irq_num":{ "type": "int", "ver": "0",
         "data": "16"
       },
       "irq_pull_type":{ "type": "int", "ver": "0",
@@ -99,19 +60,19 @@
     ".boot_config":{
       "owner": "oplus_alsps",
       "spt_sensors":{ "type": "int", "ver": "0",
-        "data": "7"
+        "data": "0x7"
       },
-      "spt_hw":{ "type": "int", "ver": "1",
-        "data": "1"
+      "spt_hw":{ "type": "int", "ver": "0",
+        "data": "0x2"
       },
-      "debug_enable":{ "type": "int", "ver": "1",
-        "data": "1"
+      "debug_enable":{ "type": "int", "ver": "0",
+        "data": "0"
       },
-      "als_type":{ "type": "int", "ver": "1",
-        "data": "1"
+      "als_type":{ "type": "int", "ver": "0",
+        "data": "2"
       },
-      "ps_type":{ "type": "int", "ver": "1",
-        "data": "1"
+      "ps_type":{ "type": "int", "ver": "0",
+        "data": "2"
       },
       "fold_feature":{ "type": "int", "ver": "0",
         "data": "0"

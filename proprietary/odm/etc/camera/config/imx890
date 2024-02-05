@@ -1,23 +1,23 @@
 {
-"file_version" : 14.011, // Andorid + version, 14.001 means Android 14 & version 001
+"file_version" : 13.006, // Andorid + version, 13.001 means Android 13 & version 001
 "file_data" : [
 
 {
   "Key": "CFR_ISO_TRRIGGER",
-  "Value": "250",
+  "Value": "450",
   "Comment": "iso trrigger for cfr"
 },
 
 {
   "Key": "CFR_HDRSCOPE_TRRIGGER",
-  "Value": "1000",
+  "Value": "100",
   "Comment": "hdrscope trrigger for cfr"
 },
 
 {
   "Key": "CFR_DRCGAIN_TRRIGGER",
   "Type": "Float",
-  "Value": "2.0",
+  "Value": "1.0",
   "Comment": "drcgain trrigger for cfr"
 },
 
@@ -74,7 +74,12 @@
 
 {
   "Key": "NIGHT_SCENE_CAMERA_MODE_V7",
-  "Value": "489"
+  "Value": "1486"
+},
+
+{
+  "Key": "IZOOM_CAMERA_MODE_V7",
+  "Value": "1489"
 },
 
 {
@@ -195,6 +200,16 @@
 },
 
 {
+  "Key": "TURBO_RAW_TMC_PARAMETERS",
+  "Type": "Int32",
+  "Count": "3",
+  "Value": "1       /* turnONTMC */,
+            1       /* turnONTMCEV */,
+            0       /* eVFixAE   */",
+  "Comment": "tmc status parameters"
+},
+
+{
   "Key": "NIGHT_AI_PURERAW_ENABLE_LSC",
   "Value": "1"
 },
@@ -224,6 +239,21 @@
   "Key": "LLHDR_TRIGGER_REGION",
   "Count": "9",
   "Value": "1,10000,1,10000,0,270,5,40,285"
+},
+
+{
+  "Key": "COUPLEHDR_TRIGGER_REGION",
+  "Type": "Int32",
+  "Count": "9",
+  "Value": "35 /*hdr scope thd*/,
+            100 /*drc*100 thd*/,
+            -36 /*evminus thd*/,
+            240 /*indoor lux index*/,
+            25 /*indoor hdr scope thd*/,
+            100 /*indoor drc*100 thd*/,
+            -36 /*indoor evminus thd*/,
+            10 /*hdr scope thd face*/,
+            10 /*hdr scope thd face indoor*/"
 },
 
 {
@@ -266,7 +296,7 @@
   "Key": "TURBORAW_SUB_LOW_EXP_EV_THRESH",
   "Type": "Float",
   "Count": "1",
-  "Value": "-21"
+  "Value": "-30"
 },
 
 {
@@ -274,6 +304,12 @@
   "Type": "Float",
   "Count": "1",
   "Value": "-21"
+},
+
+{
+  "Key": "TR_SUPPORT_INPUT_MOTION_GLOBAL",
+  "Value": "1",
+  "Comment": "1:support,0:not support"
 },
 
 {
@@ -312,6 +348,11 @@
 },
 
 {
+  "Key": "COUPLEHDR_ENABLE",
+  "Value": "1"
+},
+
+{
   "Key": "MFNR_SUPPORT",
   "Value": "1",
   "Comment": "1:support"
@@ -320,8 +361,18 @@
 {
   "Key": "INSENSORZOOM_SUPPORT",
   "Count": "4",
-  "Value": "0, 0, 0, 0",
+  "Value": "1, 0, 0, 0",
   "Comment": "[0]:normal support izoom; [1]:supertext support izoom; [2]:reserve; [3]:reserve"
+},
+
+{
+  "Key": "INSENSOR_ZOOM_TRIGGER",
+  "Type": "Int32",
+  "Count": "4",
+  "Value": "50000 /*drc iso*/,
+            330 /*lux idx*/,
+            50000 /*drc iso exit*/,
+            300 /*lux idx exit*/"
 },
 
 {
@@ -332,9 +383,8 @@
 
 {
   "Key": "TURBOERAW_SUPPORT_MOTION_SCENE",
-  "Count": "3",
-  "Value": "1,0,0",
-  "Comment": "binning support, 2dol not support, izoom not support"
+  "Value": "1",
+  "Comment": "1:support, 0:not support"
 },
 
 {
@@ -2166,8 +2216,8 @@
   "Type": "Float",
   "Count": "8",
   "Value": "
-            200/*outdoorLuxIdxThld*/, 250/*indoorLuxIdxThldStart*/, 300/*indoorLuxIdxThldEnd*/, 320/*lowLightLuxIdxThld*/,
-            10/*outdoorStrength*/, 15/*indoorStartStrength*/, 30/*indoorEndStrength*/, 50/*lowlightStrength*/
+            200/*outdoorLuxIdxThld*/, 300/*indoorLuxIdxThldStart*/, 330/*indoorLuxIdxThldEnd*/, 350/*lowLightLuxIdxThld*/,
+            150/*outdoorStrength*/, 150/*indoorStartStrength*/, 255/*indoorEndStrength*/, 255/*lowlightStrength*/
             ",
   "Comment": "jsonparamsbokehlightspotStrength"
 },
@@ -2175,30 +2225,13 @@
 {
   "VendorTag": "com.aps.params.bokehLevel",
   "Type": "Float",
-  "Count": "44",
+  "Count": "10",
   "Value": "
-              100, 0.03,
-              96,  0.03,
-              91,  0.033,
-              84,  0.0353,
-              78,  0.0403,
-              69,  0.046,
-              60,  0.057,
-              51,  0.073,
-              45,  0.0954,
-              38,  0.119,
-              32,  0.153,
-              27,  0.199,
-              24,  0.259,
-              22,  0.313,
-              20,  0.3445,
-              18,  0.384,
-              16,  0.433,
-              14,  0.495,
-              12,  0.578,
-              7,   0.695,
-              5,   1.71,
-              0,   1.0",
+            90, 0.09,
+            55, 0.14,
+            29, 0.298,
+            17, 0.465,
+             0, 1.0",
   "Comment":"appBlurValue,level"
 },
 
@@ -2809,6 +2842,15 @@
 },
 
 {
+  "Key": "MERGE_HDR_VERSION_SUPPORT",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "0       /* hdrVersion */,
+            4       /* cHdrVersion */",
+  "Comment": "hdrVersion; cHdrVersion"
+},
+
+{
   "Key": "MERGE_HDR_SUPPORT",
   "Value": "0"
 },
@@ -2862,18 +2904,96 @@
 },
 
 {
-  "VendorTag": "aps.params.portrait.repair",
+  "VendorTag": "aps.params.portrait.repair.nightbyiso",
   "Type": "Float",
-  "Count": "9",
-  "Value": "0.8     /*alpha*/,
-            0.2     /*beta*/,
-            0.5     /*mouth*/,
-            0.9     /*eye*/,
-            0.7     /*eyebrow*/,
-            0.9     /*smoothness*/,
-            0       /*quality_strength*/,
-            0       /*quality_debug*/,
-            400     /*runTimeMemSize*/",
+  "Count": "150",
+  "Value": "
+            20000   /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            16000   /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            9200    /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            6400    /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            3200    /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            1600    /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            800     /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            400     /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            200     /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            100     /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/",
+  "Comment": "portrait_repair_process_params"
+},
+
+{
+  "VendorTag": "aps.params.portrait.repair.byiso",
+  "Type": "Float",
+  "Count": "150",
+  "Value": "
+            20000   /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            16000   /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            9200    /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            6400    /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            3200    /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            1600    /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            800     /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            400     /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            200     /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/,
+
+            100     /*iso*/,
+            0.8 /*alpha*/, 0.2 /*beta*/, 0.5 /*mouth*/, 0.9 /*eye*/, 0.7 /*eyebrow*/, 0.9 /*smoothness*/, 0 /*quality_strength*/, 0 /*quality_debug*/, 400 /*runTimeMemSize*/,
+            0.7 /*blendWeightMouth*/, 0.7 /*blendWeightEye*/, 0.9 /*blendWeightEyebrow*/, 0.6 /*blendWeightFace*/, 0.65 /*blendweightborder*/",
   "Comment": "portrait_repair_process_params"
 }
 

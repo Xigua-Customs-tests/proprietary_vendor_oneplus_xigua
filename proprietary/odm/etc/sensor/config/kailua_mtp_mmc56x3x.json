@@ -55,7 +55,6 @@
       "rail_on_state":{ "type": "int", "ver": "0",
         "data": "2"
       },
-
       "vddio_rail":{ "type": "str", "ver": "0",
         "data": "/pmic/client/sensor_vddio"
       },
@@ -66,10 +65,10 @@
     ".orient":{
       "owner": "sns_mmc56x3x",
       "x":{ "type": "str", "ver": "0",
-        "data": "+x"
+        "data": "+y"
       },
       "y":{ "type": "str", "ver": "0",
-        "data": "+y"
+        "data": "-x"
       },
       "z":{ "type": "str", "ver": "0",
         "data": "+z"
@@ -82,31 +81,31 @@
         ".corr_mat":{
           "owner": "sns_mmc56x3x",
           "0_0":{ "type": "flt", "ver": "0",
-            "data": "1.0"
+            "data": "0.997259"
           },
           "0_1":{ "type": "flt", "ver": "0",
-            "data": "0.0"
+            "data": "0.0652889"
           },
           "0_2":{ "type": "flt", "ver": "0",
-            "data": "0.0"
+            "data": "-0.031942"
           },
           "1_0":{ "type": "flt", "ver": "0",
-            "data": "0.0"
+            "data": "0.0181812"
           },
           "1_1":{ "type": "flt", "ver": "0",
-            "data": "1.0"
+            "data": "0.9426225"
           },
           "1_2":{ "type": "flt", "ver": "0",
-            "data": "0.0"
+            "data": "-0.002707"
           },
           "2_0":{ "type": "flt", "ver": "0",
-            "data": "0.0"
+            "data": "0.0578791"
           },
           "2_1":{ "type": "flt", "ver": "0",
-            "data": "0.0"
+            "data": "-0.024896"
           },
           "2_2":{ "type": "flt", "ver": "0",
-            "data": "1.0"
+            "data": "1.0346327"
           }
         },
         ".bias":{

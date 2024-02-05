@@ -13,6 +13,7 @@ Pixelworks Inc. Company Confidential Strictly Private-->
 
 <!--Pixelworks dimming function-->
 <PxlwDimmingEnabled>false</PxlwDimmingEnabled>
+<PxlwSdr2hdrDimmingRate>16</PxlwSdr2hdrDimmingRate>
 
 <UseIrisCSCFeatureEnable>true</UseIrisCSCFeatureEnable>
 
@@ -23,8 +24,12 @@ Pixelworks Inc. Company Confidential Strictly Private-->
        <ColorMode SoftIris="7">6</ColorMode>
        <ColorMode SoftIris="13">12</ColorMode>
        <ColorMode SoftIris="16">5</ColorMode>
-       <ColorMode SoftIris="21">13</ColorMode>
-       <ColorMode SoftIris="22">11</ColorMode>
+       <ColorMode SoftIris="21">11</ColorMode>
+       <ColorMode SoftIris="22">3</ColorMode>
+       <ColorMode SoftIris="33">33</ColorMode>
+       <ColorMode SoftIris="34">34</ColorMode>
+       <ColorMode SoftIris="36">36</ColorMode>
+       <ColorMode SoftIris="37">37</ColorMode>
        <ColorMode SoftIris="1000">129</ColorMode>
 </IrisColorModeList>
 
@@ -49,296 +54,187 @@ Pixelworks Inc. Company Confidential Strictly Private-->
     <ColorMode ColorMode="9" RenderIntent="256">16</ColorMode>
 </SoftIrisColorModeList>
 
-<!--MCF of samsung_AMB670YF07_CS_dsc_cmd_mode_panel primary display-->
-<McfList  Display="0" Panel="0x10006">
-    <McfCheck Index="0">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/mcfCheck.txt</McfCheck>
-    <McfCheck Index="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/mcfCheck_low.txt</McfCheck>
+<!--MCF of irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel primary display-->
+<McfList  Display="0" Panel="0x1000B">
+    <McfCheck Index="0">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/mcfCheck.txt</McfCheck>
+    <McfCheck Index="1">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/mcfCheck_low.txt</McfCheck>
+    <McfCheck Index="2">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/mcfCheck_2nit.txt</McfCheck>
     <Mcf Index="0" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5.mcf</Mcf>
     <Mcf Index="1" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std.mcf</Mcf>
     <Mcf Index="2" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std2.mcf</Mcf>
     <Mcf Index="3" Type="8" Check="1">/mnt/vendor/persist/display/pxlw_iris5_std2_low.mcf</Mcf>
+    <Mcf Index="4" Type="8" Check="-1">/odm/etc/inparm/pxlw_iris5_std2_2nit.mcf</Mcf>
+    <Mcf Index="5" Type="8" Check="-1">/odm/etc/inparm/pxlw_iris5_std2_6nit.mcf</Mcf>
+    <Mcf Index="6" Type="8" Check="-1">/odm/etc/inparm/pxlw_iris5_std2_10nit.mcf</Mcf>
+    <Mcf Index="7" Type="8" Check="-1">/odm/etc/inparm/pxlw_iris5_std2_20nit.mcf</Mcf>
+    <Mcf Index="8" Type="8" Check="-1">/odm/etc/inparm/pxlw_iris5_std2_40nit.mcf</Mcf>
 </McfList>
 
-<!--MCF of irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel primary display-->
-<McfList  Display="0" Panel="0x10007">
-    <McfCheck Index="0">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/mcfCheck.txt</McfCheck>
-    <McfCheck Index="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/mcfCheck_low.txt</McfCheck>
-    <Mcf Index="0" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5.mcf</Mcf>
-    <Mcf Index="1" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std.mcf</Mcf>
-    <Mcf Index="2" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std2.mcf</Mcf>
-    <Mcf Index="3" Type="8" Check="1">/mnt/vendor/persist/display/pxlw_iris5_std2_low.mcf</Mcf>
-</McfList>
-
-<!--MCF of irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel primary display-->
-<McfList  Display="0" Panel="0x10009">
-    <McfCheck Index="0">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/mcfCheck.txt</McfCheck>
-    <McfCheck Index="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/mcfCheck_low.txt</McfCheck>
-    <Mcf Index="0" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5.mcf</Mcf>
-    <Mcf Index="1" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std.mcf</Mcf>
-    <Mcf Index="2" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std2.mcf</Mcf>
-    <Mcf Index="3" Type="8" Check="1">/mnt/vendor/persist/display/pxlw_iris5_std2_low.mcf</Mcf>
-</McfList>
-
-<!--MCF of irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel primary display-->
-<McfList  Display="0" Panel="0x1000A">
-    <McfCheck Index="0">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/mcfCheck.txt</McfCheck>
-    <McfCheck Index="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/mcfCheck_low.txt</McfCheck>
-    <Mcf Index="0" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5.mcf</Mcf>
-    <Mcf Index="1" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std.mcf</Mcf>
-    <Mcf Index="2" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std2.mcf</Mcf>
-    <Mcf Index="3" Type="8" Check="1">/mnt/vendor/persist/display/pxlw_iris5_std2_low.mcf</Mcf>
-</McfList>
-
-<!--Soft Iris panel calibration of irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel-->
+<!--Soft Iris panel calibration of irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel-->
 <!--Gamut4 is multiple brightness-->
 <!--Gamut13 is multiple brightness-->
 <!--Gamut16 is multiple brightness-->
-<InParmList Chip="5" Panel="0x10006" Display="0" Version="113">
-    <InParm Index="1" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="4" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="7" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm8.txt</InParm>
-    <InParm Index="13" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm14.txt</InParm>
-    <InParm Index="13" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
-    <InParm Index="13" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm2_Def.txt</InParm>
-    <InParm Index="13" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="16" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-    <InParm Index="21" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm22.txt</InParm>
-    <InParm Index="22" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm23.txt</InParm>
-    <InParm Index="25" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="28" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm29.txt</InParm>
-    <InParm Index="31" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm32.txt</InParm>
+<InParmList Chip="5" Panel="0x1000B" Display="0" Version="128">
+	<InParm Index="1" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="4" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="1" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5.txt</InParm>
+	<InParm Index="4" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5_low.txt</InParm>
+	<InParm Index="4" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5_2nit.txt</InParm>
+	<InParm Index="4" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="4" SubIndex="4" ColorTemp="6500" Pcs="2" Mcf="5" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5_6nit.txt</InParm>
+	<InParm Index="4" SubIndex="5" ColorTemp="6500" Pcs="2" Mcf="6" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5_10nit.txt</InParm>
+	<InParm Index="4" SubIndex="6" ColorTemp="6500" Pcs="2" Mcf="7" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5_20nit.txt</InParm>
+	<InParm Index="4" SubIndex="7" ColorTemp="6500" Pcs="2" Mcf="8" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5_40nit.txt</InParm>
+	<InParm Index="7" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm8.txt</InParm>
+	<InParm Index="7" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm8_low.txt</InParm>
+	<InParm Index="7" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm8_2nit.txt</InParm>
+	<InParm Index="7" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="7" SubIndex="4" ColorTemp="6500" Pcs="2" Mcf="5" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm8_6nit.txt</InParm>
+	<InParm Index="7" SubIndex="5" ColorTemp="6500" Pcs="2" Mcf="6" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm8_10nit.txt</InParm>
+	<InParm Index="7" SubIndex="6" ColorTemp="6500" Pcs="2" Mcf="7" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm8_20nit.txt</InParm>
+	<InParm Index="7" SubIndex="7" ColorTemp="6500" Pcs="2" Mcf="8" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm8_40nit.txt</InParm>
+	<InParm Index="13" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14.txt</InParm>
+	<InParm Index="13" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
+	<InParm Index="13" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14_2nit.txt</InParm>
+	<InParm Index="13" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="13" SubIndex="4" ColorTemp="6500" Pcs="2" Mcf="5" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14_6nit.txt</InParm>
+	<InParm Index="13" SubIndex="5" ColorTemp="6500" Pcs="2" Mcf="6" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14_10nit.txt</InParm>
+	<InParm Index="13" SubIndex="6" ColorTemp="6500" Pcs="2" Mcf="7" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14_20nit.txt</InParm>
+	<InParm Index="13" SubIndex="7" ColorTemp="6500" Pcs="2" Mcf="8" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14_40nit.txt</InParm>
+	<InParm Index="16" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="1" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17.txt</InParm>
+	<InParm Index="16" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17_low.txt</InParm>
+	<InParm Index="16" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17_2nit.txt</InParm>
+	<InParm Index="16" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="16" SubIndex="4" ColorTemp="6500" Pcs="2" Mcf="5" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17_6nit.txt</InParm>
+	<InParm Index="16" SubIndex="5" ColorTemp="6500" Pcs="2" Mcf="6" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17_10nit.txt</InParm>
+	<InParm Index="16" SubIndex="6" ColorTemp="6500" Pcs="2" Mcf="7" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17_20nit.txt</InParm>
+	<InParm Index="16" SubIndex="7" ColorTemp="6500" Pcs="2" Mcf="8" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17_40nit.txt</InParm>
+	<InParm Index="21" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="1">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm22.txt</InParm>
+	<InParm Index="22" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="1">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm23.txt</InParm>
+	<InParm Index="25" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm26.txt</InParm>
+	<InParm Index="25" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm26.txt</InParm>
+	<InParm Index="25" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm26.txt</InParm>
+	<InParm Index="25" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm26.txt</InParm>
+	<InParm Index="28" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="1" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm29.txt</InParm>
+	<InParm Index="28" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm29.txt</InParm>
+	<InParm Index="28" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm29.txt</InParm>
+	<InParm Index="28" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm29.txt</InParm>
+	<InParm Index="31" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm32.txt</InParm>
+	<InParm Index="31" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm32.txt</InParm>
+	<InParm Index="31" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm32.txt</InParm>
+	<InParm Index="31" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm32.txt</InParm>
+	<InParm Index="33" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="1">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm34.txt</InParm>
+	<InParm Index="34" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="1">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm35.txt</InParm>
+	<InParm Index="36" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="1">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm37.txt</InParm>
+	<InParm Index="37" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="1">/odm/etc/inparm/irissoft_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm38.txt</InParm>
 </InParmList>
 
-
-<!--Soft Iris panel calibration of irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel-->
-<!--Gamut4 is multiple brightness-->
-<!--Gamut13 is multiple brightness-->
-<!--Gamut16 is multiple brightness-->
-<InParmList Chip="5" Panel="0x10007" Display="0" Version="113">
-    <InParm Index="1" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="4" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="7" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm8.txt</InParm>
-    <InParm Index="13" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm14.txt</InParm>
-    <InParm Index="13" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
-    <InParm Index="13" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm2_Def.txt</InParm>
-    <InParm Index="13" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="16" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-    <InParm Index="21" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm22.txt</InParm>
-    <InParm Index="22" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm23.txt</InParm>
-    <InParm Index="25" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="28" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm29.txt</InParm>
-    <InParm Index="31" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm32.txt</InParm>
-</InParmList>
-
-
-<!--Soft Iris panel calibration of irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel-->
-<!--Gamut4 is multiple brightness-->
-<!--Gamut13 is multiple brightness-->
-<!--Gamut16 is multiple brightness-->
-<InParmList Chip="5" Panel="0x10009" Display="0" Version="112">
-    <InParm Index="1" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="4" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="7" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm8.txt</InParm>
-    <InParm Index="13" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14.txt</InParm>
-    <InParm Index="13" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
-    <InParm Index="13" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2_Def.txt</InParm>
-    <InParm Index="13" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="16" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-    <InParm Index="21" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm22.txt</InParm>
-    <InParm Index="22" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm23.txt</InParm>
-    <InParm Index="25" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="28" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm29.txt</InParm>
-    <InParm Index="31" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm32.txt</InParm>
-</InParmList>
-
-
-<!--Soft Iris panel calibration of irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel-->
-<!--Gamut4 is multiple brightness-->
-<!--Gamut13 is multiple brightness-->
-<!--Gamut16 is multiple brightness-->
-<InParmList Chip="5" Panel="0x1000A" Display="0" Version="112">
-    <InParm Index="1" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="4" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="7" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm8.txt</InParm>
-    <InParm Index="13" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14.txt</InParm>
-    <InParm Index="13" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
-    <InParm Index="13" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2_Def.txt</InParm>
-    <InParm Index="13" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="16" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-    <InParm Index="21" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm22.txt</InParm>
-    <InParm Index="22" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm23.txt</InParm>
-    <InParm Index="25" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="25" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm26.txt</InParm>
-    <InParm Index="28" ColorTemp="6500" Pcs="0" Mcf="1" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm29.txt</InParm>
-    <InParm Index="31" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm32.txt</InParm>
-</InParmList>
-
-<!--Iris7 panel calibration of iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel-->
-<InParmList Chip="7" Panel="0x10006" Display="0" Version="112">
-    <InParm Index="1" Opt="9" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="2" Opt="10" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm14.txt</InParm>
-    <InParm Index="3" Opt="11" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm23.txt</InParm>
-    <InParm Index="4" Opt="4" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="5" Opt="5" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-    <InParm Index="6" Opt="6" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm8.txt</InParm>
+<!--Iris7 panel calibration of iris7_AA536_P_3_A0001_dsc_cmd_mode_panel.xml-->
+<InParmList Chip="7" Panel="0x1000B" Display="0" Version="128">
+    <InParm Index="1" Opt="9" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm2.txt</InParm>
+    <InParm Index="2" Opt="10" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14.txt</InParm>
+    <InParm Index="3" Opt="11" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm23.txt</InParm>
+    <InParm Index="4" Opt="4" Pcs="2" Mcf="1">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5.txt</InParm>
+    <InParm Index="5" Opt="5" Pcs="2" Mcf="1">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17.txt</InParm>
+    <InParm Index="6" Opt="6" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm8.txt</InParm>
     <InParm Index="7" Interpolation="1">10/11</InParm>
     <InParm Index="8" Interpolation="2">10/11,9/9</InParm>
     <InParm Index="9" Interpolation="2">10/11,12/13</InParm>
-    <InParm Index="10" Opt="12" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
-    <InParm Index="11" Opt="13" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm22.txt</InParm>
+    <InParm Index="10" Opt="12" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
+    <InParm Index="11" Opt="13" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm22.txt</InParm>
     <InParm Index="12" Interpolation="2">10/12,9/9</InParm>
     <InParm Index="13" Interpolation="2">4/5,9/9</InParm>
     <InParm Index="14" Interpolation="2">11/13,9/9</InParm>
-    <InParm Index="19" Opt="1" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="20" Opt="8" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_CS_dsc_cmd_mode_panel/inParm17.txt</InParm>
+    <InParm Index="19" Opt="1" Pcs="2" Mcf="1">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm5.txt</InParm>
+    <InParm Index="20" Opt="8" Pcs="2" Mcf="1">/odm/etc/inparm/iris7_AA536_P_3_A0001_dsc_cmd_mode_panel/inParm17.txt</InParm>
+    <InParm Index="33" Interpolation="2">33/33,9/9</InParm>
+    <InParm Index="34" Interpolation="2">34/34,9/9</InParm>
+    <InParm Index="36" Interpolation="2">36/36,9/9</InParm>
+    <InParm Index="37" Interpolation="2">37/37,9/9</InParm>
 </InParmList>
 
-<!--Iris7 panel calibration of iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel-->
-<InParmList Chip="7" Panel="0x10007" Display="0" Version="112">
-    <InParm Index="1" Opt="9" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="2" Opt="10" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm14.txt</InParm>
-    <InParm Index="3" Opt="11" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm23.txt</InParm>
-    <InParm Index="4" Opt="4" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="5" Opt="5" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-    <InParm Index="6" Opt="6" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm8.txt</InParm>
-    <InParm Index="7" Interpolation="1">10/11</InParm>
-    <InParm Index="8" Interpolation="2">10/11,9/9</InParm>
-    <InParm Index="9" Interpolation="2">10/11,12/13</InParm>
-    <InParm Index="10" Opt="12" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
-    <InParm Index="11" Opt="13" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm22.txt</InParm>
-    <InParm Index="12" Interpolation="2">10/12,9/9</InParm>
-    <InParm Index="13" Interpolation="2">4/5,9/9</InParm>
-    <InParm Index="14" Interpolation="2">11/13,9/9</InParm>
-    <InParm Index="19" Opt="1" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="20" Opt="8" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF07_FS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-</InParmList>
-
-<!--Iris7 panel calibration of iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel-->
-<InParmList Chip="7" Panel="0x10009" Display="0" Version="112">
-    <InParm Index="1" Opt="9" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="2" Opt="10" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14.txt</InParm>
-    <InParm Index="3" Opt="11" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm23.txt</InParm>
-    <InParm Index="4" Opt="4" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="5" Opt="5" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-    <InParm Index="6" Opt="6" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm8.txt</InParm>
-    <InParm Index="7" Interpolation="1">10/11</InParm>
-    <InParm Index="8" Interpolation="2">10/11,9/9</InParm>
-    <InParm Index="9" Interpolation="2">10/11,12/13</InParm>
-    <InParm Index="10" Opt="12" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
-    <InParm Index="11" Opt="13" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm22.txt</InParm>
-    <InParm Index="12" Interpolation="2">10/12,9/9</InParm>
-    <InParm Index="13" Interpolation="2">4/5,9/9</InParm>
-    <InParm Index="14" Interpolation="2">11/13,9/9</InParm>
-    <InParm Index="19" Opt="1" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="20" Opt="8" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_CS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-</InParmList>
-
-<!--Iris7 panel calibration of iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel-->
-<InParmList Chip="7" Panel="0x1000A" Display="0" Version="112">
-    <InParm Index="1" Opt="9" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm2.txt</InParm>
-    <InParm Index="2" Opt="10" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14.txt</InParm>
-    <InParm Index="3" Opt="11" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm23.txt</InParm>
-    <InParm Index="4" Opt="4" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="5" Opt="5" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-    <InParm Index="6" Opt="6" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm8.txt</InParm>
-    <InParm Index="7" Interpolation="1">10/11</InParm>
-    <InParm Index="8" Interpolation="2">10/11,9/9</InParm>
-    <InParm Index="9" Interpolation="2">10/11,12/13</InParm>
-    <InParm Index="10" Opt="12" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
-    <InParm Index="11" Opt="13" Pcs="2" Mcf="3">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm22.txt</InParm>
-    <InParm Index="12" Interpolation="2">10/12,9/9</InParm>
-    <InParm Index="13" Interpolation="2">4/5,9/9</InParm>
-    <InParm Index="14" Interpolation="2">11/13,9/9</InParm>
-    <InParm Index="19" Opt="1" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm5.txt</InParm>
-    <InParm Index="20" Opt="8" Pcs="0" Mcf="1">/odm/etc/inparm/iris7_samsung_AMB670YF08_FS_dsc_cmd_mode_panel/inParm17.txt</InParm>
-</InParmList>
-
-
-<!--game 0 hepingjinying-->
-<PxlwSuperResolutionRateList Id="0" Game="0">
-    <PxlwSuperResolution Input="720x1600" Output="1080x2412" Count="4">7,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="720x1608" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
+<!--game 10 wangzherongyao-->
+<PxlwSuperResolutionRateList Id="0" Game="10">
+	<PxlwSuperResolution Input="640x1432" Output="1240x2772" Count="4">8,12,7,10</PxlwSuperResolution>
+	<PxlwSuperResolution Input="804x1792" Output="1240x2772" Count="4">7,12,7,9</PxlwSuperResolution>
+	<PxlwSuperResolution Input="964x2152" Output="1240x2772" Count="4">7,12,7,9</PxlwSuperResolution>
 </PxlwSuperResolutionRateList>
 
-<!--game 2 tianyamingyuedao-->
-<PxlwSuperResolutionRateList Id="1" Game="2">
-    <PxlwSuperResolution Input="1080x2316" Output="1080x2412" Count="4">8,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="1080x2316" Output="1440x3216" Count="4">8,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="1080x2412" Output="1080x2412" Count="4">8,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="1440x3216" Output="1440x3216" Count="4">8,12,10,11</PxlwSuperResolution>
+<!--game 0 hepingjinying-->
+<PxlwSuperResolutionRateList Id="1" Game="0">
+	<PxlwSuperResolution Input="720x1600" Output="1240x2772" Count="4">7,12,7,9</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x1920" Output="1240x2772" Count="4">7,12,7,9</PxlwSuperResolution> <!--for engineer mode apk old video-->
+	<PxlwSuperResolution Input="1080x2400" Output="1240x2772" Count="4">7,12,7,9</PxlwSuperResolution> <!--for engineer mode apk new video-->
 </PxlwSuperResolutionRateList>
 
 <!--game 3 yuanshen-->
 <PxlwSuperResolutionRateList Id="2" Game="3">
-    <PxlwSuperResolution Input="812x1812" Output="1080x2412" Count="4">10,12,9,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="812x1812" Output="1440x3216" Count="4">10,12,10,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="860x1920" Output="1080x2412" Count="4">10,12,9,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="860x1920" Output="1440x3216" Count="4">10,12,10,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="1080x2412" Output="1080x2412" Count="4">10,12,9,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="1440x3216" Output="1440x3216" Count="4">10,12,10,12</PxlwSuperResolution>
-</PxlwSuperResolutionRateList>
-
-<!--game 9 QQ feiche-->
-<PxlwSuperResolutionRateList Id="3" Game="9">
-    <PxlwSuperResolution Input="508x1136" Output="1080x2412" Count="4">9,12,9,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="508x1136" Output="1440x3216" Count="4">9,12,10,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="572x1280" Output="1080x2412" Count="4">9,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="572x1280" Output="1440x3216" Count="4">9,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="860x1920" Output="1080x2412" Count="4">8,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="860x1920" Output="1440x3216" Count="4">8,12,10,11</PxlwSuperResolution>
-</PxlwSuperResolutionRateList>
-
-<!--game 10 wangzherongyao-->
-<PxlwSuperResolutionRateList Id="4" Game="10">
-    <PxlwSuperResolution Input="640x1432" Output="1080x2412" Count="4">8,12,9,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="640x1472" Output="1440x3216" Count="4">8,12,10,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="804x1792" Output="1080x2412" Count="4">7,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="804x1792" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="964x2152" Output="1080x2412" Count="4">7,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="964x2152" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
-</PxlwSuperResolutionRateList>
-
-<!--game 11 guangyu-->
-<PxlwSuperResolutionRateList Id="5" Game="11">
-    <PxlwSuperResolution Input="1080x2412" Output="1080x2412" Count="4">7,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="1440x3216" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
-</PxlwSuperResolutionRateList>
-
-<!--game 13 chuanyuehuoxian-->
-<PxlwSuperResolutionRateList Id="6" Game="13">
-    <PxlwSuperResolution Input="720x1544" Output="1080x2412" Count="4">7,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="720x1608" Output="1080x2412" Count="4">7,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="720x1544" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="720x1608" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
+	<PxlwSuperResolution Input="796x1780" Output="1240x2772" Count="4">10,12,7,10</PxlwSuperResolution>
+	<PxlwSuperResolution Input="860x1920" Output="1240x2772" Count="4">10,12,7,10</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1240x2772" Output="1240x2772" Count="4">10,12,7,10</PxlwSuperResolution>
 </PxlwSuperResolutionRateList>
 
 <!--game 16 yingxionglianmeng-->
-<PxlwSuperResolutionRateList Id="7" Game="16">
-    <PxlwSuperResolution Input="480x1072" Output="1080x2412" Count="4">8,12,9,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="480x1084" Output="1440x3216" Count="4">8,12,10,12</PxlwSuperResolution>
-    <PxlwSuperResolution Input="720x1608" Output="1080x2412" Count="4">7,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="720x1608" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="900x2012" Output="1080x2412" Count="4">7,12,9,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="900x2012" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="1080x2412" Output="1080x2412" Count="4">7,12,10,11</PxlwSuperResolution>
-    <PxlwSuperResolution Input="1080x2412" Output="1440x3216" Count="4">7,12,10,11</PxlwSuperResolution>
+<PxlwSuperResolutionRateList Id="3" Game="16">
+	<PxlwSuperResolution Input="480x1072" Output="1240x2772" Count="4">8,12,7,10</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1620" Output="1240x2772" Count="4">7,12,7,9</PxlwSuperResolution>
+	<PxlwSuperResolution Input="900x2012" Output="1240x2772" Count="4">7,12,7,9</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2412" Output="1240x2772" Count="4">7,12,8,9</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 13 chuanyuehuoxian-->
+<PxlwSuperResolutionRateList Id="4" Game="13">
+	<PxlwSuperResolution Input="720x1608" Output="1240x2772" Count="4">7,12,7,9</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 9 QQ feiche-->
+<PxlwSuperResolutionRateList Id="5" Game="9">
+	<PxlwSuperResolution Input="508x1136" Output="1240x2772" Count="4">9,12,7,10</PxlwSuperResolution>
+	<PxlwSuperResolution Input="572x1280" Output="1240x2772" Count="4">9,12,7,9</PxlwSuperResolution>
+	<PxlwSuperResolution Input="860x1920" Output="1240x2772" Count="4">8,12,7,9</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 11 guangyu-->
+<PxlwSuperResolutionRateList Id="6" Game="11">
+	<PxlwSuperResolution Input="1240x2772" Output="1240x2772" Count="4">7,12,8,9</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 2 tianyamingyuedao-->
+<PxlwSuperResolutionRateList Id="7" Game="2">
+	<PxlwSuperResolution Input="1080x2316" Output="1240x2772" Count="4">8,12,8,9</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 255 Default-->
+<PxlwSuperResolutionRateList Id="8" Game="255">
+    <PxlwSuperResolution Input="480x1072" Output="1080x2412" Count="4">9,12,7,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="480x1072" Output="1240x2772" Count="4">9,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="480x1072" Output="1440x3216" Count="4">9,12,8,10</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1080x2412" Count="4">9,12,7,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1240x2772" Count="4">9,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1440x3216" Count="4">9,12,8,10</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1080x2412" Count="4">8,12,7,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1240x2772" Count="4">8,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1440x3216" Count="4">8,12,8,10</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1080x2412" Count="4">7,12,7,8</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1240x2772" Count="4">7,12,8,8</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1440x3216" Count="4">7,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1080x2412" Count="4">7,12,7,8</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1240x2772" Count="4">7,12,8,8</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1440x3216" Count="4">7,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1080x2412" Count="4">7,12,7,8</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1240x2772" Count="4">7,12,8,8</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1440x3216" Count="4">7,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1080x2412" Count="4">7,9,8,8</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1240x2772" Count="4">7,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1440x3216" Count="4">7,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1240x2772" Output="1240x2772" Count="4">7,9,8,8</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1240x2772" Output="1440x3216" Count="4">7,12,8,9</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1440x2772" Output="1440x3216" Count="4">7,9,8,8</PxlwSuperResolution>
 </PxlwSuperResolutionRateList>
 
 <PxlwSdr2hdrGroup>
 <!--all off-->
 <PxlwSdr2hdrList Id="0">
-	<PxlwSdr2hdrInfo Sdr2hdr="0"/>
+	<PxlwSdr2hdrInfo Sdr2hdr="0" />
 </PxlwSdr2hdrList>
 
 <!--video scene-->
@@ -408,22 +304,22 @@ Pixelworks Inc. Company Confidential Strictly Private-->
 
 <!--lol filter-->
 <PxlwSdr2hdrList Id="16" Game="16">
-	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="0" ColorGamut="14" ColorGains="0x100040004000" />
+	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="23" ColorGamut="14" ColorGains="0x100040004000" />
 </PxlwSdr2hdrList>
 
 <!--原神-->
 <PxlwSdr2hdrList Id="17" Game="3">
-	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="0" ColorGamut="14" ColorGains="0x100040004000" />
+	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="23" ColorGamut="14" ColorGains="0x100040004000" />
 </PxlwSdr2hdrList>
 
 <!--和平精英-->
 <PxlwSdr2hdrList Id="18" Game="0">
-	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="0" ColorGamut="14" ColorGains="0x100040004000" />
+	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="23" ColorGamut="14" ColorGains="0x100040004000" />
 </PxlwSdr2hdrList>
 
 <!--honor-->
 <PxlwSdr2hdrList Id="19" Game="10">
-	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="0" ColorGamut="14" ColorGains="0x50040004000" />
+	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="23" ColorGamut="14" ColorGains="0x50040004000" />
 </PxlwSdr2hdrList>
 
 <!--Revelation-->
@@ -448,22 +344,67 @@ Pixelworks Inc. Company Confidential Strictly Private-->
 
 <!--Sky Children of the Light-->
 <PxlwSdr2hdrList Id="24" Game="11">
-	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="0" ColorGamut="14" ColorGains="0x50040004000" />
+	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="23" ColorGamut="14" ColorGains="0x50040004000" />
 </PxlwSdr2hdrList>
 
 <!--QQ Speed-->
 <PxlwSdr2hdrList Id="27" Game="9">
-	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="0" ColorGamut="14" ColorGains="0x50040004000" />
+	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="23" ColorGamut="14" ColorGains="0x50040004000" />
 </PxlwSdr2hdrList>
 
 <!--CrossFire-->
 <PxlwSdr2hdrList Id="28" Game="13">
-	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="0" ColorGamut="14" ColorGains="0x50040004000" />
+	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="23" ColorGamut="14" ColorGains="0x50040004000" />
 </PxlwSdr2hdrList>
 
 <!--Moonlight Blade-->
 <PxlwSdr2hdrList Id="29" Game="2">
-	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="0" ColorGamut="14" ColorGains="0x50040004000" />
+	<PxlwSdr2hdrInfo Sdr2hdr="10" Ai="23" ColorGamut="14" ColorGains="0x50040004000" />
+</PxlwSdr2hdrList>
+
+<!--EDR-->
+<PxlwSdr2hdrList Id="30">
+	<PxlwSdr2hdrInfo Sdr2hdr="11" Ai="15" ColorGamut="14" ColorGains="0x400040004000"/>
+</PxlwSdr2hdrList>
+
+<!-- 和平精英EDR-->
+<PxlwSdr2hdrList Id="31" Game="0" Edr="1">
+	<PxlwSdr2hdrInfo Sdr2hdr="11" Ai="15" ColorGamut="14" ColorGains="0x400040004000"/>
+</PxlwSdr2hdrList>
+
+<!-- 原神EDR-->
+<PxlwSdr2hdrList Id="32" Game="3" Edr="1">
+	<PxlwSdr2hdrInfo Sdr2hdr="11" Ai="15" ColorGamut="14" ColorGains="0x400040004000"/>
+</PxlwSdr2hdrList>
+
+<!--honor EDR-->
+<PxlwSdr2hdrList Id="33" Game="10" Edr="1">
+	<PxlwSdr2hdrInfo Sdr2hdr="11" Ai="16" ColorGamut="14" ColorGains="0x400040004000"/>
+</PxlwSdr2hdrList>
+
+<!--QQ Speed EDR-->
+<PxlwSdr2hdrList Id="34" Game="9" Edr="1">
+	<PxlwSdr2hdrInfo Sdr2hdr="11" Ai="15" ColorGamut="14" ColorGains="0x400040004000"/>
+</PxlwSdr2hdrList>
+
+<!--CrossFire EDR-->
+<PxlwSdr2hdrList Id="35" Game="13" Edr="1">
+	<PxlwSdr2hdrInfo Sdr2hdr="11" Ai="15" ColorGamut="14" ColorGains="0x400040004000"/>
+</PxlwSdr2hdrList>
+
+<!--Sky Children of the Light EDR-->
+<PxlwSdr2hdrList Id="36" Game="11" Edr="1">
+	<PxlwSdr2hdrInfo Sdr2hdr="11" Ai="16" ColorGamut="14" ColorGains="0x400040004000"/>
+</PxlwSdr2hdrList>
+
+<!--GunsGirl EDR-->
+<PxlwSdr2hdrList Id="37" Game="4" Edr="1">
+	<PxlwSdr2hdrInfo Sdr2hdr="11" Ai="15" ColorGamut="14" ColorGains="0x400040004000" />
+</PxlwSdr2hdrList>
+
+<!--lol mobile EDR-->
+<PxlwSdr2hdrList Id="38" Game="16" Edr="1">
+    <PxlwSdr2hdrInfo Sdr2hdr="11" Ai="15" ColorGamut="14" ColorGains="0x400040004000" />
 </PxlwSdr2hdrList>
 
 </PxlwSdr2hdrGroup>

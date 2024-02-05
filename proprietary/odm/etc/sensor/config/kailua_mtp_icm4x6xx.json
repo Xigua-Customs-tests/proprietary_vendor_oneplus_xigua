@@ -2,7 +2,7 @@
   "config":
   {
     "hw_platform": ["QRD", "MTP"],
-    "soc_id": ["415","435", "457", "519"]
+    "soc_id": ["519"]
   },
   "icm4x6xx_0":{
     "owner": "sns_icm4x6xx",
@@ -95,6 +95,15 @@
           "data": "0"
         }
       }
+    },
+    ".ois":{
+      "owner": "sns_icm4x6xx",
+      ".config":{
+        "owner": "sns_icm4x6xx",
+        "is_use_sois":{ "type": "int", "ver": "0",
+          "data": "1"
+        }
+      }
     }
   },
   "icm4x6xx_0_platform":{
@@ -132,7 +141,7 @@
         "data": "0"
       },
       "irq_trigger_type":{ "type": "int", "ver": "0",
-        "data": "3"
+        "data": "4"
       },
       "num_rail":{ "type": "int", "ver": "0",
         "data": "2"
@@ -153,12 +162,12 @@
     ".orient":{
       "owner": "sns_icm4x6xx",
       "x":{ "type": "str", "ver": "0",
-        "data": "+x"
+        "data": "-x"
       },
-      "y":{ "type": "str", "ver": "1",
-        "data": "+y"
+      "y":{ "type": "str", "ver": "0",
+        "data": "-y"
       },
-      "z":{ "type": "str", "ver": "1",
+      "z":{ "type": "str", "ver": "0",
         "data": "+z"
       }
     },

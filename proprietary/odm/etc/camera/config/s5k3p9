@@ -1,5 +1,5 @@
 {
-"file_version" : 14.008, // Andorid + version, 14.004 means Android 14 & version 004
+"file_version" : 13.008, // Andorid + version, 13.004 means Android 13 & version 004
 "file_data" : [
 
 {
@@ -67,7 +67,7 @@
 
 {
   "Key": "NIGHT_SCENE_CAMERA_MODE_V7",
-  "Value": "492"
+  "Value": "1488"
 },
 
 {
@@ -200,9 +200,8 @@
 
 {
   "Key": "TURBOERAW_SUPPORT_MOTION_SCENE",
-  "Count": "3",
-  "Value": "0,0,0",
-  "Comment": "binning support, 2dol not support, izoom not support"
+  "Value": "0",
+  "Comment": "1:support, 0:not support"
 },
 
 {

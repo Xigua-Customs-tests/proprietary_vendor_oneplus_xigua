@@ -1,16 +1,37 @@
 {
-"file_version" : 14.003,
+"file_version" : 13.011,
 "file_data" : [
 
 {
-  "VendorTag": "com.oplus.feature.hw.manufacturer.qualcomm",
+  "VendorTag": "com.oplus.single.camera.use.commom.portrait.previewsize",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.qcom.offline.mfnr.support",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
 },
 
 {
-  "VendorTag": "com.oplus.feature.qr.code.scanner.support",
+  "VendorTag": "com.oplus.binaural.recording.version",
+  "Type": "Float",
+  "Count": "1",
+  "Value": "2.0"
+},
+
+{
+  "VendorTag": "com.oplus.feature.fastvideo.4k.ultra.wide.not.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.feature.hw.manufacturer.qualcomm",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
@@ -62,7 +83,7 @@
   "VendorTag": "com.oplus.feature.xpan.mode.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -121,51 +142,12 @@
   "Value": "1"
 },
 
+
 {
   "VendorTag": "com.oplus.feature.qr.code.enable.support",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
-},
-
-{"VendorTag": "com.oplus.xpan.crop.region.main.landscape",
-  "Type": "Int32",
-  "Count": "4",
-  "Value": "64,360,7872,2916"
-},
-
-{"VendorTag": "com.oplus.xpan.crop.region.wide.landscape",
-  "Type": "Int32",
-  "Count": "4",
-  "Value": "64,360,7872,2916"
-},
-
-{
-  "VendorTag": "com.oplus.xpan.crop.region.wide.portrait",
-  "Type": "Int32",
-  "Count": "4",
-  "Value": "360,64,2916,7872"
-},
-
-{
-  "VendorTag": "com.oplus.xpan.crop.region.main.portrait",
-  "Type": "Int32",
-  "Count": "4",
-  "Value": "360,64,2916,7872"
-},
-
-{
-  "VendorTag": "com.oplus.xpan.switch.camera.mm",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.xpan.wide.picturesize",
-  "Type": "Int32",
-  "Count": "2",
-  "Value": "8192x3724"
 },
 
 {
@@ -200,7 +182,7 @@
   "VendorTag": "com.oplus.tunning.back.portrait.normal.picturesize",
   "Type": "Int32",
   "Count": "2",
-  "Value": "4000x3000"
+  "Value": "4096x3072"
 },
 
 {
@@ -221,7 +203,7 @@
   "VendorTag": "com.oplus.hal.memory.10bit",
   "Type": "Int32",
   "Count": "1",
-  "Value": "2336"
+  "Value": "1936"
 },
 
 {
@@ -235,7 +217,7 @@
   "VendorTag": "com.oplus.hal.memory.common",
   "Type": "Int32",
   "Count": "1",
-  "Value": "2252"
+  "Value": "1852"
 },
 
 {
@@ -249,28 +231,14 @@
   "VendorTag": "com.oplus.hal.memory.night",
   "Type": "Int32",
   "Count": "1",
-  "Value": "2252"
-},
-
-{
-  "VendorTag": "com.oplus.hal.memory.portrait.8G",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "1300"
-},
-
-{
-  "VendorTag": "com.oplus.hal.memory.portrait.12G",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "2014"
+  "Value": "1852"
 },
 
 {
   "VendorTag": "com.oplus.hal.memory.portrait",
   "Type": "Int32",
   "Count": "1",
-  "Value": "2263"
+  "Value": "1763"
 },
 
 {
@@ -494,7 +462,7 @@
   "VendorTag": "com.oplus.feature.video.8k.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -543,7 +511,7 @@
   "VendorTag": "com.oplus.feature.video.8k.24fps.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -648,7 +616,7 @@
   "VendorTag": "com.oplus.ultra.wide.high.picturesize",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -662,7 +630,7 @@
   "VendorTag": "com.oplus.tele.high.picture.size.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -687,13 +655,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.sat.ultrawide.focus.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oppo.feature.microscope.support",
   "Type": "Byte",
   "Count": "1",
@@ -705,48 +666,6 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "0"
-},
-
-{
-  "VendorTag": "com.oplus.sat.ultrawide.zoom.range",
-  "Type": "Float",
-  "Count": "2",
-  "Value": "0.6,1.0"
-},
-
-{
-  "VendorTag": "com.oplus.hasselblad.portrait.calibration",
-  "Type": "Float",
-  "Count": "6",
-  "Value": "30.0,3.5,65.0,2.8,30.0,3.5"
-},
-
-{
-  "VendorTag": "com.oplus.sat.main.zoom.range",
-  "Type": "Float",
-  "Count": "2",
-  "Value": "1.0,2.0"
-},
-
-{
-  "VendorTag": "com.oplus.sat.tele.zoom.range",
-  "Type": "Float",
-  "Count": "2",
-  "Value": "2.0,20.0"
-},
-
-{
-  "VendorTag": "com.oplus.feature.video.sat.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.feature.video.sat.mask",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "3"
 },
 
 {
@@ -767,7 +686,7 @@
   "VendorTag": "com.oplus.feature.video.super.eis.wide.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -799,13 +718,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.video.filter_index_partition",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.feature.video.3hdr.support",
   "Type": "Byte",
   "Count": "1",
@@ -816,7 +728,7 @@
   "VendorTag": "com.oplus.portrait.half.body.remosaic.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -862,6 +774,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.capture.memory.switch.mfnr.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.ui.shutterbutton.type.lowlight",
   "Type": "Byte",
   "Count": "1",
@@ -876,24 +795,10 @@
 },
 
 {
-  "VendorTag": "com.oplus.feature.fast.video.sat.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.sat.use.hal",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.professional.switch.camera.type",
   "Type": "Int32",
   "Count": "1",
-  "Value": "7"
+  "Value": "0"
 },
 
 {
@@ -971,7 +876,7 @@
   "VendorTag": "com.oplus.feature.auto.micro",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -1002,24 +907,17 @@
 },
 
 {
-  "VendorTag": "com.oplus.feature.video.hyper.lapse.ultra.wide.support",
-  "Type": "Byte",
+  "VendorTag": "com.oplus.feature.hyper.lapse.zoom.list",
+  "Type": "Float",
   "Count": "1",
-  "Value": "1"
+  "Value": "1.0"
 },
 
 {
   "VendorTag": "com.oplus.portrait.mode.picture.size.1x",
   "Type": "Int32",
   "Count": "4",
-  "Value": "4096x3072x1440x1080"
-},
-
-{
-  "VendorTag": "com.oplus.portrait.mode.picture.size.2x",
-  "Type": "Int32",
-  "Count": "4",
-  "Value": "3136x2352x4096x3072"
+  "Value": "4096x3072x1632x1224"
 },
 
 {
@@ -1114,10 +1012,10 @@
 },
 
 {
-  "VendorTag": "com.oplus.sat.need.set.zoomratio",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
+  "VendorTag": "com.oplus.feature.none.sat.rear.mode",
+  "Type": "String",
+  "Count": "8",
+  "Value": "common,commonVideo,night,superText,tiltShift,tiltShiftFastVideo,fastVideo,highDefinition"
 },
 
 {
@@ -1240,13 +1138,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.feature.ai.scene.ultrawide.hint.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.tele.small.preview.support",
   "Type": "Byte",
   "Count": "1",
@@ -1285,7 +1176,7 @@
   "VendorTag": "com.oplus.feature.ai.enhancement.video.facebeauty.mutex.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -1443,13 +1334,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.use.hasselblad.style.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.request.zsl.mode",
   "Type": "Byte",
   "Count": "1",
@@ -1485,13 +1369,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.camera.mode.data.db.version",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "2"
-},
-
-{
   "VendorTag": "com.oplus.watermark.is.new.project.behavior",
   "Type": "Byte",
   "Count": "1",
@@ -1507,13 +1384,6 @@
 
 {
   "VendorTag": "com.oplus.cache.while.preview",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.feature.end.front.video.eis.stream.support",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
@@ -1545,6 +1415,13 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.self.exit.shell.temperature.threshold",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "33"
 },
 
 {
@@ -1586,7 +1463,7 @@
   "VendorTag": "com.oplus.portrait.zoom.value.default",
   "Type": "Float",
   "Count": "1",
-  "Value": "2.0"
+  "Value": "1.0"
 },
 
 {
@@ -1613,22 +1490,22 @@
 {
   "VendorTag": "com.oplus.camera.athena.target.mem.low",
   "Type": "Float",
-  "Count": "2",
-  "Value": "3.0,4.0"
+  "Count": "3",
+  "Value": "3.0,4.0,4.0"
 },
 
 {
   "VendorTag": "com.oplus.camera.athena.target.mem.medium",
   "Type": "Float",
-  "Count": "2",
-  "Value": "3.0,4.5"
+  "Count": "3",
+  "Value": "3.0,4.5,4.5"
 },
 
 {
   "VendorTag": "com.oplus.camera.athena.target.mem.high",
   "Type": "Float",
-  "Count": "2",
-  "Value": "3.0,5.0"
+  "Count": "3",
+  "Value": "3.0,5.0,5.0"
 },
 
 {
@@ -1675,45 +1552,45 @@
 },
 
 {
-  "VendorTag": "com.oplus.binaural.recording.version",
-  "Type": "Float",
+  "VendorTag": "com.oplus.ultrawide.support",
+  "Type": "Int32",
   "Count": "1",
-  "Value": "2"
+  "Value": "1"
 },
 
 {
-  "VendorTag": "com.oplus.camera.support.custom.hasselblad.watermark",
+  "VendorTag": "com.oplus.feature.macro.mode.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.front.sensor.binning",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
 },
 
 {
-  "VendorTag": "com.oplus.feature.gesture.shutter.switch.default",
+  "VendorTag": "com.oplus.hasselblad.watermark.support.default",
   "Type": "Byte",
   "Count": "1",
   "Value": "0"
 },
 
 {
-  "VendorTag": "com.oplus.telephoto.super.eis.support",
-  "Type": "Byte",
+  "VendorTag": "com.oplus.camera.rear.num",
+  "Type": "Int32",
   "Count": "1",
-  "Value": "0"
+  "Value": "3"
 },
 
 {
-  "VendorTag": "com.oplus.more.tele.zoom.support",
-  "Type": "Byte",
+  "VendorTag": "com.oplus.adaptive.density.value",
+  "Type": "Int32",
   "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.default.video.codec",
-  "Type": "String",
-  "Count": "1",
-  "Value": "H265"
+  "Value": "551"
 },
 
 {
@@ -1724,31 +1601,45 @@
 },
 
 {
-  "VendorTag": "com.oplus.support.professional.mode.in.headline",
+  "VendorTag": "com.oplus.photo.flash.on.night.lock.focus",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.feature.qr.code.scanner.support",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
 },
 
 {
-  "VendorTag": "com.oplus.feature.move.mode.to.headline",
-  "Type": "String",
-  "Count": "2",
-  "Value": "professional,0"
-},
-
-{
-  "VendorTag": "com.oplus.feature.move.mode.to.panel",
-  "Type": "String",
-  "Count": "2",
-  "Value": "night,0"
-},
-
-{
-  "VendorTag": "com.oplus.binaural.recording.version",
-  "Type": "Float",
+  "VendorTag": "com.oplus.maincamera.asd.aiscene.support",
+  "Type": "Byte",
   "Count": "1",
-  "Value": "2.0"
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.widecamera.asd.aiscene.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.capture.need.match.preview.timestamp",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.feature.end.front.video.eis.stream.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 },
 
 {
@@ -1759,20 +1650,11 @@
 },
 
 {
-  "VendorTag": "com.oplus.watermark.edit.in.gallery.support",
+  "VendorTag": "com.oplus.support.professional.mode.in.headline",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.color.config.for.dataspace.capturemode",
-  "Type": "String",
-  "Count": "3",
-  "Value": "1,2,3"
-
+  "Value": "0"
 }
 
 ]
 }
-
