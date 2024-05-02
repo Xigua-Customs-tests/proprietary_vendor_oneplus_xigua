@@ -704,6 +704,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.feature.super.text.two.default.state",
+  "Type": "Int32",
+  "Count": "3",
+  "Value": "0,0,0"
+},
+
+{
   "VendorTag": "com.oplus.camera.support.activity.rotate",
   "Type": "Byte",
   "Count": "1",
